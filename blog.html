@@ -35,6 +35,16 @@
     .nav-links { display: flex; align-items: center; gap: 2px; background: linear-gradient(180deg, rgba(255,255,255,.08), rgba(255,255,255,.02)); border: 1px solid rgba(255,255,255,.16); border-radius: 100px; padding: 9px 22px; -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px); box-shadow: 0 0 46px rgba(255,255,255,.10); }
     .nav-links a { color: rgba(245,241,235,.55); text-decoration: none; font-size: 13.5px; font-weight: 500; padding: 6px 15px; border-radius: 100px; transition: color .2s; white-space: nowrap; }
     .nav-links a:hover, .nav-links a.active { color: var(--cream); }
+    .nav-drop { position: relative; display: inline-flex; align-items: center; }
+    .nav-drop__trigger { display: inline-flex !important; align-items: center; gap: 5px; }
+    .nav-drop__chev { width: 11px; height: 11px; transition: transform .25s ease; opacity: .7; }
+    .nav-drop:hover .nav-drop__chev { transform: rotate(180deg); }
+    .nav-drop__panel { position: absolute; top: 100%; left: 50%; transform: translateX(-50%) translateY(10px); min-width: 250px; display: flex; flex-direction: column; gap: 2px; padding: 8px; background: rgba(10,10,12,.95); -webkit-backdrop-filter: blur(18px); backdrop-filter: blur(18px); border: 1px solid rgba(255,255,255,.12); border-radius: 16px; box-shadow: 0 24px 60px rgba(0,0,0,.55); opacity: 0; pointer-events: none; transition: opacity .25s ease, transform .25s ease; }
+    .nav-drop__panel::before { content: ''; position: absolute; top: -14px; left: 0; right: 0; height: 14px; }
+    .nav-drop:hover .nav-drop__panel { opacity: 1; pointer-events: auto; transform: translateX(-50%) translateY(4px); }
+    .nav-drop__panel a { display: flex !important; align-items: center; justify-content: space-between; gap: 14px; padding: 10px 14px !important; border-radius: 10px !important; font-size: 13.5px; color: rgba(245,241,235,.72) !important; white-space: nowrap; }
+    .nav-drop__panel a:hover { background: rgba(255,255,255,.06); color: #fff !important; }
+    .nav-drop__tag { font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: .06em; color: var(--copper-2); border: 1px solid rgba(194,94,69,.4); border-radius: 100px; padding: 2px 8px; }
     .nav-cta { display: inline-flex; align-items: center; background: rgba(13,14,11,.45); -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px); color: var(--cream); font-size: 13.5px; font-weight: 700; padding: 9px 22px; border-radius: 100px; text-decoration: none; position: relative; box-shadow: 0 0 22px rgba(194,94,69,.22); }
     .nav-cta::before { content: ''; position: absolute; inset: 0; border-radius: 100px; padding: 1.5px; background: linear-gradient(135deg, var(--copper), rgba(245,241,235,.6) 50%, var(--copper-2)); -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0); -webkit-mask-composite: xor; mask-composite: exclude; pointer-events: none; }
     .nav-toggle { display: none; flex-direction: column; gap: 5px; width: 42px; height: 42px; align-items: center; justify-content: center; background: rgba(255,255,255,.06); border: 1px solid rgba(255,255,255,.14); border-radius: 12px; cursor: pointer; }
@@ -90,7 +100,17 @@
   <a href="index.html#inicio" class="logo" aria-label="Strago Studio — inicio"><img src="assets/logo.png" alt="Strago Studio" class="logo-img" /></a>
   <div class="nav-links">
     <a href="index.html#servicios">Servicios</a>
-    <a href="index.html#industrias">Industrias</a>
+    <div class="nav-drop">
+      <a href="index.html#industrias" class="nav-drop__trigger">Industrias<svg class="nav-drop__chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></a>
+      <div class="nav-drop__panel">
+        <a href="igaming-marketing.html">iGaming <span class="nav-drop__tag">Ver</span></a>
+        <a href="mineria-construccion.html">Minería &amp; Construcción <span class="nav-drop__tag">Ver</span></a>
+        <a href="index.html#industrias">E-commerce</a>
+        <a href="index.html#industrias">SaaS · Apps</a>
+        <a href="index.html#industrias">Bienes raíces</a>
+      </div>
+    </div>
+    <a href="nosotros.html">Nosotros</a>
     <a href="blog.html" class="active">Blog</a>
     <a href="index.html#contacto">Contacto</a>
   </div>
