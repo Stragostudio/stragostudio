@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AEO: cómo aparecer en ChatGPT y Gemini antes que tu competencia | Strago Studio</title>
+  <meta name="description" content="Qué es Answer Engine Optimization (AEO) y qué tácticas verificadas ayudan a que ChatGPT, Gemini y Perplexity citen tu marca al responder." />
+  <link rel="canonical" href="https://stragostudio.com/blog-aeo-chatgpt-gemini" />
+  <meta property="og:title" content="AEO: cómo aparecer en ChatGPT y Gemini antes que tu competencia" />
+  <meta property="og:description" content="Qué es AEO y qué tácticas verificadas ayudan a que la IA cite tu marca." />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://stragostudio.com/blog-aeo-chatgpt-gemini" />
+  <meta name="theme-color" content="#050506" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "AEO: cómo aparecer en ChatGPT y Gemini antes que tu competencia",
+    "description": "Qué es Answer Engine Optimization (AEO) y qué tácticas verificadas ayudan a que ChatGPT, Gemini y Perplexity citen tu marca al responder.",
+    "inLanguage": "es",
+    "articleSection": "SEO / IA",
+    "datePublished": "2026-07-14",
+    "dateModified": "2026-07-14",
+    "mainEntityOfPage": { "@type": "WebPage", "@id": "https://stragostudio.com/blog-aeo-chatgpt-gemini" },
+    "author": { "@type": "Organization", "name": "Strago Studio", "url": "https://stragostudio.com/" },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Strago Studio",
+      "logo": { "@type": "ImageObject", "url": "https://stragostudio.com/assets/logo.png" }
+    }
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/png" href="assets/favicon.png" />
+  <link rel="apple-touch-icon" href="assets/favicon.png" />
+
+  <style>
+    :root { --black:#050506; --copper:#C25E45; --copper-2:#D97A5E; --cream:#F5F1EB; --line:rgba(255,255,255,.10); --muted:rgba(245,241,235,.55); --pad:clamp(20px,5vw,48px); }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Inter', sans-serif; background: var(--black); color: var(--cream); overflow-x: clip; -webkit-font-smoothing: antialiased; line-height: 1.5; min-height: 100vh; }
+    h1, h2, h3 { font-family: 'Inter', sans-serif; }
+    a { color: inherit; }
+    ::selection { background: var(--copper); color: #fff; }
+    .wrap { max-width: 1160px; margin: 0 auto; padding: 0 var(--pad); }
+
+    .navbar { position: fixed; top: 0; left: 0; right: 0; z-index: 100; display: flex; align-items: center; justify-content: space-between; padding: 18px var(--pad); }
+    .navbar.scrolled { background: rgba(5,5,6,.72); -webkit-backdrop-filter: blur(16px); backdrop-filter: blur(16px); border-bottom: 1px solid var(--line); }
+    .logo { text-decoration: none; display: inline-flex; align-items: center; }
+    .logo .logo-img { height: 34px; width: auto; display: block; }
+    .nav-links { display: flex; align-items: center; gap: 2px; background: linear-gradient(180deg, rgba(255,255,255,.08), rgba(255,255,255,.02)); border: 1px solid rgba(255,255,255,.16); border-radius: 100px; padding: 9px 22px; -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px); box-shadow: 0 0 46px rgba(255,255,255,.10); }
+    .nav-links a { color: rgba(245,241,235,.55); text-decoration: none; font-size: 13.5px; font-weight: 500; padding: 6px 15px; border-radius: 100px; transition: color .2s; white-space: nowrap; }
+    .nav-links a:hover, .nav-links a.active { color: var(--cream); }
+    .nav-cta { display: inline-flex; align-items: center; background: rgba(13,14,11,.45); -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px); color: var(--cream); font-size: 13.5px; font-weight: 700; padding: 9px 22px; border-radius: 100px; text-decoration: none; position: relative; box-shadow: 0 0 22px rgba(194,94,69,.22); }
+    .nav-cta::before { content: ''; position: absolute; inset: 0; border-radius: 100px; padding: 1.5px; background: linear-gradient(135deg, var(--copper), rgba(245,241,235,.6) 50%, var(--copper-2)); -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0); -webkit-mask-composite: xor; mask-composite: exclude; pointer-events: none; }
+    .nav-toggle { display: none; flex-direction: column; gap: 5px; width: 42px; height: 42px; align-items: center; justify-content: center; background: rgba(255,255,255,.06); border: 1px solid rgba(255,255,255,.14); border-radius: 12px; cursor: pointer; }
+    .nav-toggle span { width: 18px; height: 2px; background: #fff; border-radius: 2px; transition: transform .3s, opacity .3s; }
+    .nav-toggle.open span:nth-child(1){ transform: translateY(7px) rotate(45deg); }
+    .nav-toggle.open span:nth-child(2){ opacity: 0; }
+    .nav-toggle.open span:nth-child(3){ transform: translateY(-7px) rotate(-45deg); }
+    .mmenu { position: fixed; top: 0; left: 0; right: 0; z-index: 99; display: flex; flex-direction: column; gap: 2px; padding: 92px 24px 28px; background: rgba(5,5,6,.94); -webkit-backdrop-filter: blur(20px); backdrop-filter: blur(20px); border-bottom: 1px solid var(--line); transform: translateY(-110%); opacity: 0; pointer-events: none; transition: transform .42s cubic-bezier(.22,.61,.36,1), opacity .3s; }
+    .mmenu.open { transform: translateY(0); opacity: 1; pointer-events: auto; }
+    .mmenu a { color: rgba(255,255,255,.82); text-decoration: none; font-size: 18px; font-weight: 600; padding: 15px 6px; border-bottom: 1px solid rgba(255,255,255,.06); }
+    .mmenu .mcta { margin-top: 16px; text-align: center; background: var(--copper); color: #fff; border-radius: 14px; padding: 15px; border-bottom: none; }
+
+    .head { position: relative; padding: 150px var(--pad) 30px; overflow: hidden; }
+    .head__glow { position: absolute; top: -10%; left: 8%; width: 50vw; max-width: 620px; height: 50vw; max-height: 620px; border-radius: 50%; background: radial-gradient(circle, rgba(194,94,69,.20), transparent 62%); filter: blur(30px); pointer-events: none; }
+    .head .wrap { position: relative; max-width: 760px; }
+    .eyebrow { font-size: 12px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: var(--copper); margin-bottom: 16px; }
+    .head h1 { font-size: clamp(30px, 5vw, 50px); font-weight: 700; letter-spacing: -.03em; line-height: 1.08; color: #fff; }
+    .head__meta { font-size: 13px; color: var(--muted); margin-top: 18px; }
+
+    .article { padding: 16px var(--pad) 40px; }
+    .article .wrap { max-width: 760px; }
+    .article__lead { font-size: clamp(18px,2vw,21px); color: rgba(245,241,235,.86); line-height: 1.65; margin-bottom: 6px; }
+    .article__body h2 { font-size: clamp(23px,3vw,30px); font-weight: 700; margin: 44px 0 14px; color:#fff; letter-spacing:-.02em; line-height: 1.2; }
+    .article__body h3 { font-size: 19px; font-weight: 600; margin: 30px 0 10px; color:#fff; }
+    .article__body p { color: rgba(245,241,235,.74); font-size: 17px; line-height: 1.75; margin: 0 0 18px; }
+    .article__body ul, .article__body ol { margin: 0 0 20px; padding-left: 22px; color: rgba(245,241,235,.74); font-size: 17px; line-height: 1.7; }
+    .article__body li { margin-bottom: 8px; }
+    .article__body a { color: var(--copper-2); text-decoration: underline; text-underline-offset: 3px; }
+    .article__body strong { color:#fff; font-weight: 600; }
+    .callout { border: 1px solid var(--line); background: linear-gradient(180deg, rgba(255,255,255,.05), rgba(255,255,255,.015)); border-left: 3px solid var(--copper); border-radius: 12px; padding: 18px 20px; margin: 26px 0; font-size: 16px; color: rgba(245,241,235,.82); line-height: 1.6; }
+    .disclaimer { font-size: 13.5px; color: rgba(255,255,255,.42); margin-top: 22px; font-style: italic; line-height: 1.6; }
+    .sources { margin-top: 46px; padding-top: 24px; border-top: 1px solid var(--line); }
+    .sources h2 { font-size: 14px; text-transform: uppercase; letter-spacing:.1em; color: var(--muted); margin-bottom: 14px; font-weight: 700; }
+    .sources ol { padding-left: 20px; font-size: 13.5px; color: var(--muted); line-height: 1.7; }
+    .sources li { margin-bottom: 9px; }
+    .sources a { color: var(--copper-2); word-break: break-word; text-decoration: underline; text-underline-offset: 2px; }
+    .article-cta { margin: 46px 0 0; padding: 32px; border-radius: 18px; border: 1px solid var(--line); background: linear-gradient(180deg, rgba(194,94,69,.10), rgba(255,255,255,.015)); text-align: center; }
+    .article-cta h3 { font-size: 22px; font-weight: 700; color: #fff; margin-bottom: 8px; }
+    .article-cta p { color: var(--muted); font-size: 15px; max-width: 460px; margin: 0 auto; }
+    .article-cta a { display:inline-block; margin-top: 18px; background: var(--copper); color:#fff; padding: 13px 28px; border-radius: 100px; text-decoration:none; font-weight:600; font-size: 15px; }
+    .backlink { display:inline-block; margin-top: 40px; font-size: 14px; color: var(--muted); text-decoration:none; }
+    .backlink:hover { color: var(--cream); }
+
+    .foot { border-top: 1px solid var(--line); padding: 48px var(--pad); margin-top: 30px; }
+    .foot .wrap { display: flex; justify-content: space-between; align-items: center; gap: 24px; flex-wrap: wrap; }
+    .foot a.flogo { text-decoration: none; display: inline-flex; align-items: center; }
+    .foot a.flogo .logo-img { height: 38px; width: auto; display: block; }
+    .foot__links { display: flex; gap: 20px; flex-wrap: wrap; }
+    .foot__links a { font-size: 13.5px; color: var(--muted); text-decoration: none; transition: color .2s; }
+    .foot__links a:hover { color: var(--cream); }
+
+    @media (max-width: 900px) { .nav-links { display: none; } .nav-toggle { display: flex; } .nav-cta { display: none; } }
+    @media (max-width: 600px) { .head { padding-top: 128px; } }
+  </style>
+</head>
+<body>
+
+<nav class="navbar" id="nav">
+  <a href="index.html#inicio" class="logo" aria-label="Strago Studio — inicio"><img src="assets/logo.png" alt="Strago Studio" class="logo-img" /></a>
+  <div class="nav-links">
+    <a href="index.html#servicios">Servicios</a>
+    <a href="index.html#industrias">Industrias</a>
+    <a href="blog.html" class="active">Blog</a>
+    <a href="index.html#contacto">Contacto</a>
+  </div>
+  <a href="index.html#contacto" class="nav-cta">Hablemos</a>
+  <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false"><span></span><span></span><span></span></button>
+</nav>
+
+<div class="mmenu" id="mmenu" aria-hidden="true">
+  <a href="index.html#servicios">Servicios</a>
+  <a href="index.html#industrias">Industrias</a>
+  <a href="blog.html">Blog</a>
+  <a href="index.html#contacto">Contacto</a>
+  <a href="index.html#contacto" class="mcta">Hablemos</a>
+</div>
+
+<header class="head">
+  <div class="head__glow" aria-hidden="true"></div>
+  <div class="wrap">
+    <div class="eyebrow">SEO / IA</div>
+    <h1>AEO: cómo aparecer en ChatGPT y Gemini antes que tu competencia</h1>
+    <div class="head__meta">14 de julio de 2026 · 6 min de lectura</div>
+  </div>
+</header>
+
+<main class="article">
+  <div class="wrap">
+    <div class="article__body">
+      <p class="article__lead">Cada vez más personas hacen sus preguntas a ChatGPT, Gemini o Perplexity en lugar de a un buscador tradicional. Si esos motores no “conocen” tu marca, desapareces de la conversación. El AEO es la disciplina que busca cambiar eso.</p>
+
+      <h2>Qué es AEO</h2>
+      <p><strong>AEO (Answer Engine Optimization) es la práctica de estructurar tu contenido para que los sistemas de IA —como Google Gemini, ChatGPT y Perplexity— puedan extraerlo, entenderlo y citarlo como respuesta autorizada.</strong> Donde el SEO clásico persigue posiciones en una lista de enlaces, el AEO persigue ser <em>la</em> respuesta que la IA entrega.</p>
+
+      <h2>Por qué importa ahora</h2>
+      <p>El comportamiento de búsqueda ya se está moviendo. Según Amsive, los AI Overviews de Google aparecen en cerca del <strong>16% de todas las búsquedas de escritorio en Estados Unidos</strong>, lo que cambia de raíz cómo la gente encuentra información. A eso se suma el volumen de ChatGPT como alternativa de búsqueda conversacional. Traducción: una parte creciente de las respuestas ocurre <strong>sin que el usuario haga clic</strong> en un resultado tradicional.</p>
+
+      <h2>Tácticas que ayudan a que la IA te cite</h2>
+      <h3>1. Responde en bloques cortos y directos</h3>
+      <p>Las guías de AEO coinciden en empezar con <strong>bloques de respuesta de 40 a 60 palabras</strong> que contesten la pregunta de forma clara antes de desarrollarla. La IA extrae mejor respuestas concisas y autocontenidas.</p>
+      <h3>2. Refuerza señales de autoridad (E-E-A-T)</h3>
+      <p>Experiencia, pericia, autoridad y confianza (E-E-A-T) siguen siendo señales clave. Las marcas se recomiendan cuando demuestran autoridad consistente: branding coherente, datos estructurados y menciones en fuentes confiables.</p>
+      <h3>3. Aplica datos estructurados (schema markup)</h3>
+      <p>El marcado <em>schema</em> ayuda a los motores a entender qué es cada cosa en tu página. Es una de las tácticas recurrentes en las guías de AEO para volverte “legible” para la IA.</p>
+      <h3>4. Cuida tus entidades y tu consistencia</h3>
+      <p>Los sistemas de IA mapean el mundo mediante entidades (personas, marcas, productos, conceptos). Si tu contenido no las define y refuerza con términos consistentes, enlaces internos y páginas de apoyo, corres el riesgo de ser invisible para los modelos. En lo local, mantener tu <strong>NAP</strong> (nombre, dirección, teléfono) consistente en tus perfiles ayuda a que la IA no te excluya por datos contradictorios.</p>
+      <h3>5. Mantén el contenido actualizado</h3>
+      <p>La frescura pesa. Según datos citados por Amsive, para consultas comerciales y de evaluación, <strong>el 83% de las citaciones de IA provinieron de páginas actualizadas en los últimos 12 meses</strong>. Revisar y refrescar tu contenido es parte del trabajo, no un extra.</p>
+
+      <div class="callout">Cambia también cómo mides. En AEO no solo miras tráfico y posiciones: observas <strong>cómo te describe la IA</strong>, con qué frecuencia apareces frente a competidores y si esas menciones son favorables.</div>
+
+      <h2>En resumen</h2>
+      <p>El AEO no reemplaza al SEO: lo extiende hacia un mundo donde la respuesta la da una IA. Contenido claro en bloques cortos, señales de autoridad, datos estructurados, entidades consistentes y actualización constante son las palancas que hoy aumentan la probabilidad de que ChatGPT o Gemini te nombren. Empezar temprano es, en sí mismo, la ventaja.</p>
+
+      <div class="article-cta">
+        <h3>¿Tu marca aparece cuando le preguntan a la IA?</h3>
+        <p>En Strago trabajamos SEO y AEO para que te encuentren en buscadores y en motores de respuesta.</p>
+        <a href="index.html#contacto">Hablemos de tu visibilidad</a>
+      </div>
+
+      <section class="sources">
+        <h2>Fuentes</h2>
+        <ol>
+          <li>Amsive — “Answer Engine Optimization (AEO): Your Complete Guide to AI Search Visibility” (incluye el dato de AI Overviews en ~16% de búsquedas de escritorio en EE. UU. y el 83% de citaciones de páginas actualizadas en 12 meses). <a href="https://www.amsive.com/insights/seo/answer-engine-optimization-aeo-evolving-your-seo-strategy-in-the-age-of-ai-search/" target="_blank" rel="noopener">amsive.com</a></li>
+          <li>HubSpot — “Show Up in AI Search with Answer Engine Optimization (AEO)”. <a href="https://www.hubspot.com/products/marketing/aeo-guide" target="_blank" rel="noopener">hubspot.com/products/marketing/aeo-guide</a></li>
+          <li>Neil Patel — “Answer Engine Optimization (AEO): Strategies for AI Search”. <a href="https://neilpatel.com/blog/answer-engine-optimization/" target="_blank" rel="noopener">neilpatel.com/blog/answer-engine-optimization</a></li>
+          <li>Profound — “What is answer engine optimization (AEO)?”. <a href="https://www.tryprofound.com/resources/articles/what-is-answer-engine-optimization" target="_blank" rel="noopener">tryprofound.com</a></li>
+        </ol>
+      </section>
+
+      <a href="blog.html" class="backlink">← Volver al blog</a>
+    </div>
+  </div>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <a href="index.html#inicio" class="flogo" aria-label="Strago Studio — inicio"><img src="assets/logo.png" alt="Strago Studio" class="logo-img" /></a>
+    <nav class="foot__links" aria-label="Links">
+      <a href="index.html#servicios">Servicios</a>
+      <a href="index.html#industrias">Industrias</a>
+      <a href="igaming-marketing.html">iGaming</a>
+      <a href="index.html#contacto">Contacto</a>
+      <a href="https://www.linkedin.com/company/strago-studio" target="_blank" rel="noopener">LinkedIn</a>
+    </nav>
+  </div>
+</footer>
+
+<script>
+  (function () {
+    var nav = document.getElementById('nav');
+    window.addEventListener('scroll', function () { nav.classList.toggle('scrolled', window.scrollY > 40); }, { passive: true });
+    var t = document.getElementById('navToggle'), m = document.getElementById('mmenu');
+    function setOpen(o) { t.classList.toggle('open', o); m.classList.toggle('open', o); t.setAttribute('aria-expanded', o); m.setAttribute('aria-hidden', !o); document.body.style.overflow = o ? 'hidden' : ''; }
+    t.addEventListener('click', function () { setOpen(!m.classList.contains('open')); });
+    m.querySelectorAll('a').forEach(function (a) { a.addEventListener('click', function () { setOpen(false); }); });
+  })();
+</script>
+
+</body>
+</html>

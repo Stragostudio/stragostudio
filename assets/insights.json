@@ -1,30 +1,39 @@
 {
   "posts": [
     {
-      "title": "Del clic al primer depósito: cómo medir lo que de verdad importa",
-      "excerpt": "Por qué el CPA real y el primer pago deben guiar tus campañas, y cómo dejar de optimizar para métricas de vanidad.",
-      "category": "Performance",
-      "date": "2026-06-20",
+      "title": "CPA vs. CAC: qué métrica debe guiar de verdad tus campañas",
+      "excerpt": "Suenan igual pero no lo son. La diferencia entre CPA y CAC, cómo se calcula cada una y cuál usar para decidir sin quemar presupuesto.",
+      "category": "Métricas",
+      "date": "2026-07-15",
       "readingTime": "5 min",
-      "url": "#",
+      "url": "blog-cpa-vs-cac.html",
       "image": ""
     },
     {
       "title": "AEO: cómo aparecer en ChatGPT y Gemini antes que tu competencia",
-      "excerpt": "La optimización para motores de respuesta con IA es el nuevo primer lugar. Te contamos cómo empezar hoy.",
+      "excerpt": "La optimización para motores de respuesta con IA es el nuevo primer lugar. Qué es el AEO y qué tácticas verificadas ayudan a que la IA cite tu marca.",
       "category": "SEO / IA",
-      "date": "2026-06-12",
+      "date": "2026-07-14",
       "readingTime": "6 min",
-      "url": "#",
+      "url": "blog-aeo-chatgpt-gemini.html",
       "image": ""
     },
     {
-      "title": "Adquisición en apuestas online: claves de un mercado regulado y competitivo",
-      "excerpt": "Cómo decide un apostador, cómo pautar en este entorno y cómo construir un embudo hacia el primer depósito.",
-      "category": "Adquisición",
-      "date": "2026-06-03",
-      "readingTime": "7 min",
-      "url": "#",
+      "title": "Marketing para casas de apuestas en Colombia: qué permite la regulación",
+      "excerpt": "Ley 643, Coljuegos y el Decreto 1451 de 2015: cómo funciona el marco legal del iGaming en Colombia y qué implica para el marketing de un operador.",
+      "category": "iGaming",
+      "date": "2026-07-13",
+      "readingTime": "8 min",
+      "url": "blog-marketing-igaming-colombia.html",
+      "image": ""
+    },
+    {
+      "title": "Del clic al primer depósito: cómo diseñar un embudo que convierte",
+      "excerpt": "Del modelo AIDA al framework AARRR de Dave McClure: qué es un embudo de conversión y cómo aplicarlo del primer clic al primer depósito.",
+      "category": "Estrategia",
+      "date": "2026-07-12",
+      "readingTime": "6 min",
+      "url": "blog-embudo-primer-deposito.html",
       "image": ""
     }
   ]
