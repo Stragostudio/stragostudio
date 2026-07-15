@@ -3,12 +3,33 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Blog | Strago Studio</title>
-  <meta name="description" content="Ideas y aprendizajes sobre adquisición, performance y crecimiento digital — por Strago Studio." />
-  <meta property="og:title" content="Blog | Strago Studio" />
-  <meta property="og:description" content="Ideas y aprendizajes sobre adquisición, performance y crecimiento digital." />
+  <title>Nosotros | Strago Studio — Agencia de marketing en Medellín</title>
+  <meta name="description" content="Strago Studio es una agencia de marketing digital y performance basada en Medellín, que opera el embudo completo con un solo equipo para empresas de Colombia y Latinoamérica." />
+  <link rel="canonical" href="https://stragostudio.com/nosotros" />
+  <meta property="og:title" content="Nosotros | Strago Studio" />
+  <meta property="og:description" content="Agencia de marketing digital y performance basada en Medellín. Un solo equipo para todo tu marketing." />
   <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://stragostudio.com/nosotros" />
   <meta name="theme-color" content="#050506" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "AboutPage",
+    "url": "https://stragostudio.com/nosotros",
+    "mainEntity": {
+      "@type": "ProfessionalService",
+      "@id": "https://stragostudio.com/#organization",
+      "name": "Strago Studio",
+      "url": "https://stragostudio.com/",
+      "logo": "https://stragostudio.com/assets/logo.png",
+      "email": "contacto@stragostudio.com",
+      "telephone": "+57-311-372-1338",
+      "address": { "@type": "PostalAddress", "addressLocality": "Medellín", "addressRegion": "Antioquia", "addressCountry": "CO" },
+      "areaServed": [ { "@type": "Country", "name": "Colombia" }, { "@type": "Place", "name": "Latinoamérica" } ]
+    }
+  }
+  </script>
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -21,17 +42,14 @@
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     html { scroll-behavior: smooth; }
     body { font-family: 'Inter', sans-serif; background: var(--black); color: var(--cream); overflow-x: clip; -webkit-font-smoothing: antialiased; line-height: 1.5; min-height: 100vh; }
-    h1, h2, h3 { font-family: 'Inter', sans-serif; }
     a { color: inherit; }
     ::selection { background: var(--copper); color: #fff; }
     .wrap { max-width: 1160px; margin: 0 auto; padding: 0 var(--pad); }
 
-    /* NAV */
     .navbar { position: fixed; top: 0; left: 0; right: 0; z-index: 100; display: flex; align-items: center; justify-content: space-between; padding: 18px var(--pad); }
     .navbar.scrolled { background: rgba(5,5,6,.72); -webkit-backdrop-filter: blur(16px); backdrop-filter: blur(16px); border-bottom: 1px solid var(--line); }
     .logo { text-decoration: none; display: inline-flex; align-items: center; }
     .logo .logo-img { height: 34px; width: auto; display: block; }
-    .logo .b { font-weight: 700; } .logo .l { font-weight: 300; }
     .nav-links { display: flex; align-items: center; gap: 2px; background: linear-gradient(180deg, rgba(255,255,255,.08), rgba(255,255,255,.02)); border: 1px solid rgba(255,255,255,.16); border-radius: 100px; padding: 9px 22px; -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px); box-shadow: 0 0 46px rgba(255,255,255,.10); }
     .nav-links a { color: rgba(245,241,235,.55); text-decoration: none; font-size: 13.5px; font-weight: 500; padding: 6px 15px; border-radius: 100px; transition: color .2s; white-space: nowrap; }
     .nav-links a:hover, .nav-links a.active { color: var(--cream); }
@@ -47,32 +65,37 @@
     .mmenu a { color: rgba(255,255,255,.82); text-decoration: none; font-size: 18px; font-weight: 600; padding: 15px 6px; border-bottom: 1px solid rgba(255,255,255,.06); }
     .mmenu .mcta { margin-top: 16px; text-align: center; background: var(--copper); color: #fff; border-radius: 14px; padding: 15px; border-bottom: none; }
 
-    /* HEADER */
-    .head { position: relative; padding: 168px var(--pad) 60px; overflow: hidden; }
-    .head__glow { position: absolute; top: -10%; left: 8%; width: 50vw; max-width: 620px; height: 50vw; max-height: 620px; border-radius: 50%; background: radial-gradient(circle, rgba(194,94,69,.22), transparent 62%); filter: blur(30px); pointer-events: none; }
-    .head .wrap { position: relative; }
+    .head { position: relative; padding: 168px var(--pad) 40px; overflow: hidden; }
+    .head__glow { position: absolute; top: -10%; left: 8%; width: 50vw; max-width: 620px; height: 50vw; max-height: 620px; border-radius: 50%; background: radial-gradient(circle, rgba(194,94,69,.20), transparent 62%); filter: blur(30px); pointer-events: none; }
+    .head .wrap { position: relative; max-width: 820px; }
     .eyebrow { font-size: 12px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: var(--copper); margin-bottom: 18px; }
-    .head h1 { font-size: clamp(40px, 7vw, 84px); font-weight: 700; letter-spacing: -.04em; line-height: 1.02; color: #fff; }
-    .head p { font-size: clamp(15px,1.6vw,18px); color: var(--muted); max-width: 520px; margin-top: 20px; line-height: 1.6; }
+    .head h1 { font-size: clamp(34px, 5.5vw, 62px); font-weight: 800; letter-spacing: -.035em; line-height: 1.05; color: #fff; }
+    .head p { font-size: clamp(16px,1.7vw,20px); color: rgba(245,241,235,.68); max-width: 620px; margin-top: 22px; line-height: 1.6; }
 
-    /* BLOG GRID */
-    .blog { padding: 40px var(--pad) 120px; }
-    .blog-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
-    .blog-card { display: flex; flex-direction: column; text-decoration: none; overflow: hidden; border-radius: 18px; border: 1px solid var(--line); background: linear-gradient(180deg, rgba(255,255,255,.05), rgba(255,255,255,.015)); transition: transform .3s, border-color .3s, box-shadow .3s; opacity: 0; transform: translateY(28px); }
-    .blog-card.in { opacity: 1; transform: none; transition: opacity .6s ease, transform .6s ease; }
-    .blog-card:hover { transform: translateY(-6px); border-color: rgba(194,94,69,.35); box-shadow: 0 24px 50px rgba(0,0,0,.45); }
-    .blog-card__media { position: relative; aspect-ratio: 16/10; background-size: cover; background-position: center; }
-    .blog-card__media--ph { background: radial-gradient(120% 120% at 20% 0%, rgba(194,94,69,.35), transparent 55%), linear-gradient(180deg,#15161a,#0d0e12); }
-    .blog-card__cat { position: absolute; top: 14px; left: 14px; font-size: 11px; font-weight: 600; letter-spacing: .04em; text-transform: uppercase; color: #fff; background: rgba(0,0,0,.4); border: 1px solid rgba(255,255,255,.15); padding: 5px 10px; border-radius: 999px; -webkit-backdrop-filter: blur(6px); backdrop-filter: blur(6px); }
-    .blog-card__body { padding: 22px; display: flex; flex-direction: column; gap: 8px; }
-    .blog-card__meta { font-size: 12px; color: rgba(255,255,255,.45); }
-    .blog-card__title { font-size: 18px; font-weight: 600; letter-spacing: -.02em; color: #fff; line-height: 1.25; overflow-wrap: anywhere; }
-    .blog-card__excerpt { font-size: 14px; color: var(--muted); line-height: 1.6; }
-    .blog-empty { color: rgba(255,255,255,.4); font-size: 15px; }
+    .sec { padding: 40px var(--pad) 60px; }
+    .sec .wrap { max-width: 820px; }
+    .sec h2 { font-size: clamp(23px,3vw,30px); font-weight: 700; color: #fff; letter-spacing: -.02em; margin: 40px 0 14px; }
+    .sec p { color: rgba(245,241,235,.74); font-size: 17px; line-height: 1.75; margin-bottom: 16px; }
+    .sec p strong { color: #fff; font-weight: 600; }
 
-    /* FOOTER */
-    .foot { border-top: 1px solid var(--line); padding: 48px var(--pad); }
-    .foot .wrap { display: flex; justify-content: space-between; align-items: center; gap: 24px; flex-wrap: wrap; }
+    .values { display: grid; grid-template-columns: repeat(3,1fr); gap: 16px; margin-top: 26px; }
+    .value { border: 1px solid var(--line); background: linear-gradient(180deg, rgba(255,255,255,.05), rgba(255,255,255,.015)); border-radius: 16px; padding: 24px; }
+    .value h3 { font-size: 16px; font-weight: 600; color: #fff; margin-bottom: 8px; }
+    .value p { font-size: 14px; color: var(--muted); line-height: 1.55; margin: 0; }
+
+    /* NAP / CONTACTO */
+    .nap { margin-top: 40px; border: 1px solid var(--line); border-radius: 20px; padding: clamp(28px,4vw,40px); background: linear-gradient(180deg, rgba(194,94,69,.08), rgba(255,255,255,.015)); }
+    .nap h2 { margin-top: 0; }
+    .nap__grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; margin-top: 20px; }
+    .nap__item .lbl { font-size: 12px; text-transform: uppercase; letter-spacing: .08em; color: var(--copper); font-weight: 700; margin-bottom: 6px; }
+    .nap__item a, .nap__item address { font-size: 15.5px; color: rgba(245,241,235,.85); text-decoration: none; font-style: normal; line-height: 1.5; }
+    .nap__item a:hover { color: #fff; }
+    .nap__cta { margin-top: 26px; display: inline-block; background: var(--copper); color: #fff; padding: 13px 26px; border-radius: 100px; text-decoration: none; font-weight: 600; font-size: 15px; }
+    .backlink { display:inline-block; margin-top: 44px; font-size: 14px; color: var(--muted); text-decoration:none; }
+    .backlink:hover { color: var(--cream); }
+
+    .foot { border-top: 1px solid var(--line); padding: 48px var(--pad); margin-top: 30px; }
+    .foot .wrap { display: flex; justify-content: space-between; align-items: center; gap: 24px; flex-wrap: wrap; max-width: 1160px; }
     .foot a.flogo { text-decoration: none; display: inline-flex; align-items: center; }
     .foot a.flogo .logo-img { height: 38px; width: auto; display: block; }
     .foot__links { display: flex; gap: 20px; flex-wrap: wrap; }
@@ -80,8 +103,8 @@
     .foot__links a:hover { color: var(--cream); }
 
     @media (max-width: 900px) { .nav-links { display: none; } .nav-toggle { display: flex; } .nav-cta { display: none; } }
-    @media (max-width: 880px) { .blog-grid { grid-template-columns: repeat(2, 1fr); } }
-    @media (max-width: 600px) { .blog-grid { grid-template-columns: 1fr; } .head { padding-top: 140px; } }
+    @media (max-width: 720px) { .values, .nap__grid { grid-template-columns: 1fr; } }
+    @media (max-width: 600px) { .head { padding-top: 140px; } }
   </style>
 </head>
 <body>
@@ -91,7 +114,8 @@
   <div class="nav-links">
     <a href="index.html#servicios">Servicios</a>
     <a href="index.html#industrias">Industrias</a>
-    <a href="blog.html" class="active">Blog</a>
+    <a href="nosotros.html" class="active">Nosotros</a>
+    <a href="blog.html">Blog</a>
     <a href="index.html#contacto">Contacto</a>
   </div>
   <a href="index.html#contacto" class="nav-cta">Hablemos</a>
@@ -101,6 +125,7 @@
 <div class="mmenu" id="mmenu" aria-hidden="true">
   <a href="index.html#servicios">Servicios</a>
   <a href="index.html#industrias">Industrias</a>
+  <a href="nosotros.html">Nosotros</a>
   <a href="blog.html">Blog</a>
   <a href="index.html#contacto">Contacto</a>
   <a href="index.html#contacto" class="mcta">Hablemos</a>
@@ -109,15 +134,46 @@
 <header class="head">
   <div class="head__glow" aria-hidden="true"></div>
   <div class="wrap">
-    <div class="eyebrow">Blog</div>
-    <h1>Ideas que mueven el resultado.</h1>
-    <p>Aprendizajes sobre adquisición, performance y crecimiento digital. Lo que vamos descubriendo operando embudos reales.</p>
+    <div class="eyebrow">Nosotros</div>
+    <h1>Un solo equipo para todo tu marketing.</h1>
+    <p>Strago Studio es una agencia de marketing digital y performance basada en Medellín, que trabaja con empresas de Colombia y Latinoamérica.</p>
   </div>
 </header>
 
-<main class="blog">
+<main class="sec">
   <div class="wrap">
-    <div class="blog-grid" id="blogGrid" aria-live="polite"></div>
+    <h2>Quiénes somos</h2>
+    <p>Somos una agencia de marketing integral: reunimos en un mismo equipo la estrategia, los medios pagados, el SEO, el contenido, el diseño, el desarrollo web y la analítica. En lugar de que coordines varios proveedores que no se hablan entre sí, operamos el <strong>embudo completo</strong> de forma coordinada.</p>
+    <p>Nos enfocamos en lo que de verdad mueve tu negocio: <strong>más clientes, al costo correcto.</strong> No optimizamos para métricas de vanidad, sino para resultados reales.</p>
+
+    <h2>Cómo trabajamos</h2>
+    <div class="values">
+      <div class="value"><h3>Un solo equipo</h3><p>Estrategia, pauta, contenido, diseño y web bajo un mismo techo, sin proveedores sueltos.</p></div>
+      <div class="value"><h3>Orientados a resultados</h3><p>Pensamos en costo de adquisición, conversión y el embudo completo, no en likes.</p></div>
+      <div class="value"><h3>Especialización por industria</h3><p>Adaptamos la estrategia a cada sector: iGaming, minería y construcción, y más.</p></div>
+    </div>
+
+    <div class="nap" id="contacto">
+      <h2>Dónde estamos</h2>
+      <p style="margin-bottom:0;">Con base en Medellín, trabajamos con clientes en toda Colombia y Latinoamérica.</p>
+      <div class="nap__grid">
+        <div class="nap__item">
+          <div class="lbl">Ubicación</div>
+          <address>Medellín, Antioquia<br>Colombia</address>
+        </div>
+        <div class="nap__item">
+          <div class="lbl">Teléfono</div>
+          <a href="https://wa.me/573113721338" target="_blank" rel="noopener">+57 311 372 1338</a>
+        </div>
+        <div class="nap__item">
+          <div class="lbl">Correo</div>
+          <a href="mailto:contacto@stragostudio.com">contacto@stragostudio.com</a>
+        </div>
+      </div>
+      <a href="https://wa.me/573113721338?text=Hola%20Strago%2C%20quiero%20hablar%20sobre%20mi%20proyecto%20de%20marketing." class="nap__cta" target="_blank" rel="noopener">Hablemos por WhatsApp</a>
+    </div>
+
+    <a href="index.html" class="backlink">← Volver al inicio</a>
   </div>
 </main>
 
@@ -127,8 +183,8 @@
     <nav class="foot__links" aria-label="Links">
       <a href="index.html#servicios">Servicios</a>
       <a href="index.html#industrias">Industrias</a>
-      <a href="igaming-marketing.html">iGaming</a>
       <a href="nosotros.html">Nosotros</a>
+      <a href="blog.html">Blog</a>
       <a href="index.html#contacto">Contacto</a>
       <a href="https://www.linkedin.com/company/strago-studio" target="_blank" rel="noopener">LinkedIn</a>
     </nav>
@@ -136,7 +192,6 @@
 </footer>
 
 <script>
-  /* NAV scrolled + menú móvil */
   (function () {
     var nav = document.getElementById('nav');
     window.addEventListener('scroll', function () { nav.classList.toggle('scrolled', window.scrollY > 40); }, { passive: true });
@@ -144,33 +199,6 @@
     function setOpen(o) { t.classList.toggle('open', o); m.classList.toggle('open', o); t.setAttribute('aria-expanded', o); m.setAttribute('aria-hidden', !o); document.body.style.overflow = o ? 'hidden' : ''; }
     t.addEventListener('click', function () { setOpen(!m.classList.contains('open')); });
     m.querySelectorAll('a').forEach(function (a) { a.addEventListener('click', function () { setOpen(false); }); });
-  })();
-
-  /* Render de Insights desde assets/insights.json */
-  (function () {
-    var grid = document.getElementById('blogGrid');
-    if (!grid) return;
-    function esc(s) { return String(s == null ? '' : s).replace(/[&<>"]/g, function (c) { return ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' })[c]; }); }
-    function fmtDate(iso) { try { return new Date(iso + 'T00:00:00').toLocaleDateString('es-CO', { day: 'numeric', month: 'short', year: 'numeric' }); } catch (e) { return iso || ''; } }
-    function render(posts) {
-      if (!posts || !posts.length) { grid.innerHTML = '<p class="blog-empty">Pronto publicaremos nuestros primeros artículos.</p>'; return; }
-      grid.innerHTML = posts.map(function (p) {
-        var hasImg = p.image && p.image.trim();
-        var media = '<div class="blog-card__media' + (hasImg ? '' : ' blog-card__media--ph') + '"' + (hasImg ? ' style="background-image:url(\'' + esc(p.image) + '\')"' : '') + '>' + (p.category ? '<span class="blog-card__cat">' + esc(p.category) + '</span>' : '') + '</div>';
-        var meta = fmtDate(p.date) + (p.readingTime ? ' · ' + esc(p.readingTime) : '');
-        return '<a class="blog-card" href="' + esc(p.url || '#') + '">' + media + '<div class="blog-card__body"><div class="blog-card__meta">' + meta + '</div><h3 class="blog-card__title">' + esc(p.title) + '</h3><p class="blog-card__excerpt">' + esc(p.excerpt) + '</p></div></a>';
-      }).join('');
-      // reveal escalonado
-      var cards = grid.querySelectorAll('.blog-card');
-      if ('IntersectionObserver' in window) {
-        var io = new IntersectionObserver(function (es) { es.forEach(function (e, i) { if (e.isIntersecting) { e.target.style.transitionDelay = (i % 3 * 80) + 'ms'; e.target.classList.add('in'); io.unobserve(e.target); } }); }, { threshold: .15 });
-        cards.forEach(function (c) { io.observe(c); });
-      } else { cards.forEach(function (c) { c.classList.add('in'); }); }
-    }
-    fetch('assets/insights.json', { cache: 'no-cache' })
-      .then(function (r) { if (!r.ok) throw new Error('http'); return r.json(); })
-      .then(function (d) { render(d.posts || []); })
-      .catch(function () { grid.innerHTML = '<p class="blog-empty">Pronto publicaremos nuestros primeros artículos.</p>'; });
   })();
 </script>
 
