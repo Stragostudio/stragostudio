@@ -3,15 +3,27 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Marketing para iGaming | Agencia para casas de apuestas — Strago Studio</title>
-  <meta name="description" content="Agencia de marketing para iGaming: del descubrimiento al primer depósito. Estrategia, medios pagados, creativo y datos para operadores y casas de apuestas en un mercado regulado y competitivo." />
-  <link rel="canonical" href="https://stragostudio.com/igaming-marketing" />
+  <title>Marketing para minería y construcción | Strago Studio</title>
+  <meta name="description" content="Agencia de marketing para minería, construcción y seguridad industrial: estrategia de redes, contenido, pauta digital, embudo de ventas, identidad de marca y desarrollo web, bajo un mismo equipo." />
+  <link rel="canonical" href="https://stragostudio.com/mineria-construccion" />
 
-  <meta property="og:title" content="Marketing para iGaming | Strago Studio" />
-  <meta property="og:description" content="Del descubrimiento al primer depósito. Adquisición y performance para operadores de iGaming y casas de apuestas en Colombia y Latinoamérica." />
+  <meta property="og:title" content="Marketing para minería y construcción | Strago Studio" />
+  <meta property="og:description" content="Estrategia de redes, contenido, pauta, embudo, marca y web para el sector industrial en Colombia y Latinoamérica." />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://stragostudio.com/igaming-marketing" />
+  <meta property="og:url" content="https://stragostudio.com/mineria-construccion" />
   <meta name="theme-color" content="#050506" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Marketing para minería y construcción",
+    "serviceType": "Marketing digital para el sector industrial",
+    "provider": { "@type": "Organization", "name": "Strago Studio", "url": "https://stragostudio.com/" },
+    "areaServed": [ { "@type": "Country", "name": "Colombia" }, { "@type": "Place", "name": "Latinoamérica" } ],
+    "url": "https://stragostudio.com/mineria-construccion"
+  }
+  </script>
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -78,32 +90,11 @@
     .hero__sub strong { color: #fff; font-weight: 600; }
     .hero__cta { display: flex; gap: 14px; align-items: center; flex-wrap: wrap; }
     .hero__col--img { display: flex; justify-content: center; }
+    /* Imagen recortada (PNG con fondo transparente) — sin blend, con sombra para profundidad */
+    .hero__col--img { overflow: visible; }
     .hero__col--img picture { display: block; width: 100%; }
-    .hero__img {
-      width: 100%; height: auto; display: block;
-      mix-blend-mode: screen;
-      -webkit-mask-image: radial-gradient(95% 120% at 52% 50%, #000 55%, transparent 96%);
-      mask-image: radial-gradient(95% 120% at 52% 50%, #000 55%, transparent 96%);
-    }
-
-    /* Hero visual: tarjeta de "ganancias en vivo" (alusiva a iGaming) */
-    .betcard { position: relative; border-radius: 24px; padding: 28px; }
-    .betcard__glow { position: absolute; inset: 0; z-index: -1; border-radius: 24px; background: radial-gradient(circle at 65% 40%, rgba(194,94,69,.3), transparent 62%); filter: blur(26px); }
-    .betcard__head { display: flex; align-items: center; justify-content: space-between; margin-bottom: 18px; }
-    .betcard__label { font-size: 12px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: rgba(255,255,255,.55); }
-    .betcard__live { display: inline-flex; align-items: center; gap: 7px; font-size: 11px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: var(--green); background: rgba(116,196,138,.1); border: 1px solid rgba(116,196,138,.3); padding: 4px 10px; border-radius: 999px; }
-    .betcard__live i { width: 7px; height: 7px; border-radius: 50%; background: var(--green); box-shadow: 0 0 8px rgba(116,196,138,.9); animation: dotPulse 1.6s ease-in-out infinite; }
-    .betcard__amount { font-size: clamp(34px,4.4vw,50px); font-weight: 800; letter-spacing: -.03em; line-height: 1; color: #fff; }
-    .betcard__amount span { font-variant-numeric: tabular-nums; }
-    .betcard__delta { margin-top: 8px; font-size: 13px; font-weight: 600; color: var(--green); }
-    .betcard__chart { display: flex; align-items: flex-end; gap: 8px; height: 92px; margin: 22px 0 20px; }
-    .betcard__chart span { flex: 1; height: var(--h); border-radius: 6px 6px 3px 3px; background: linear-gradient(180deg, var(--copper-2), rgba(194,94,69,.35)); transform-origin: bottom; transform: scaleY(0); animation: betBar .9s cubic-bezier(.22,.61,.36,1) forwards; }
-    .betcard__chart span:nth-child(1){animation-delay:.05s} .betcard__chart span:nth-child(2){animation-delay:.12s} .betcard__chart span:nth-child(3){animation-delay:.19s} .betcard__chart span:nth-child(4){animation-delay:.26s} .betcard__chart span:nth-child(5){animation-delay:.33s} .betcard__chart span:nth-child(6){animation-delay:.4s} .betcard__chart span:nth-child(7){animation-delay:.47s} .betcard__chart span:nth-child(8){animation-delay:.54s;background:linear-gradient(180deg,#fff,var(--copper))}
-    @keyframes betBar { to { transform: scaleY(1); } }
-    .betcard__odds { display: grid; grid-template-columns: repeat(3,1fr); gap: 10px; }
-    .odd { display: flex; flex-direction: column; gap: 4px; padding: 12px 14px; border-radius: 12px; border: 1px solid rgba(255,255,255,.1); background: rgba(255,255,255,.03); }
-    .odd small { font-size: 11px; color: rgba(255,255,255,.5); } .odd b { font-size: 18px; font-weight: 800; color: #fff; letter-spacing: -.02em; }
-    .odd--hot { border-color: rgba(194,94,69,.45); background: rgba(194,94,69,.1); } .odd--hot b { color: var(--copper-2); }
+    .hero__img { width: 100%; height: auto; display: block; transform: scale(1.16); transform-origin: center right; filter: drop-shadow(0 28px 55px rgba(0,0,0,.6)); }
+    @media (max-width: 980px) { .hero__img { transform: scale(1.08); transform-origin: center; } }
 
     .hero__scroll { position: absolute; bottom: 24px; left: var(--pad); font-size: 11px; letter-spacing: .2em; text-transform: uppercase; color: rgba(245,241,235,.45); display: flex; align-items: center; gap: 10px; z-index: 2; }
     .hero__scroll::before { content: ''; width: 1px; height: 34px; background: linear-gradient(rgba(245,241,235,.5), transparent); transform-origin: top; animation: scrollLine 2s ease-in-out infinite; }
@@ -160,7 +151,7 @@
     .svc__pills { display: flex; flex-wrap: wrap; gap: 9px; }
     .svc__pills span { font-size: 13px; font-weight: 500; color: rgba(245,241,235,.72); background: rgba(255,255,255,.05); border: 1px solid rgba(255,255,255,.1); padding: 8px 14px; border-radius: 100px; }
 
-    /* METODOLOGÍA — timeline de 6 fases */
+    /* METODOLOGÍA — timeline */
     .mtl { margin-top: 52px; }
     .mtl__row { display: grid; grid-template-columns: 1.1fr .9fr; gap: 48px; align-items: start; padding: 42px 0; }
     .mtl__badge { display: inline-block; font-size: 11px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: var(--copper-2); background: rgba(194,94,69,.12); border: 1px solid rgba(194,94,69,.3); padding: 5px 12px; border-radius: 999px; margin-bottom: 16px; }
@@ -194,9 +185,8 @@
     /* FOOTER */
     .foot { border-top: 1px solid var(--line); padding: 56px 0 40px; }
     .foot__top { display: flex; justify-content: space-between; align-items: flex-start; gap: 30px; flex-wrap: wrap; }
-    .foot__logo { font-family: 'Satoshi','Inter',sans-serif; font-size: 17px; letter-spacing: -.02em; text-decoration: none; display: inline-flex; align-items: center; gap: 8px; }
-    .foot__logo .b { font-weight: 700; } .foot__logo .l { font-weight: 300; }
-    .foot__logo::after { content: ''; width: 5px; height: 5px; border-radius: 50%; background: var(--copper); margin-bottom: 2px; }
+    .foot__logo { text-decoration: none; display: inline-flex; align-items: center; }
+    .foot__logo .logo-img { height: 38px; width: auto; display: block; }
     .foot__links { display: flex; gap: 22px; flex-wrap: wrap; }
     .foot__links a { font-size: 13.5px; color: var(--muted); text-decoration: none; transition: color .25s; }
     .foot__links a:hover { color: var(--cream); }
@@ -234,7 +224,7 @@
   <a href="index.html#inicio" class="nav__logo" aria-label="Strago Studio — inicio"><img src="assets/logo.png" alt="Strago Studio" class="logo-img" /></a>
   <div class="nav__right">
     <a href="index.html#industrias" class="nav__back">← Industrias</a>
-    <a href="https://wa.me/573113721338?text=Hola%20Strago%2C%20quiero%20hablar%20sobre%20el%20marketing%20de%20mi%20casa%20de%20apuestas." class="btn-glow btn-glow--sm" target="_blank" rel="noopener" data-cursor>Hablemos</a>
+    <a href="https://wa.me/573113721338?text=Hola%20Strago%2C%20quiero%20hablar%20sobre%20el%20marketing%20de%20mi%20empresa%20de%20miner%C3%ADa%20o%20construcci%C3%B3n." class="btn-glow btn-glow--sm" target="_blank" rel="noopener" data-cursor>Hablemos</a>
   </div>
 </nav>
 
@@ -245,11 +235,11 @@
   <div class="wrap">
     <div class="hero__grid">
       <div class="hero__col">
-        <span class="eyebrow">Marketing para iGaming · Casas de apuestas</span>
-        <h1 class="hero__title" id="heroTitle">Marketing de iGaming que trae jugadores <span class="accent">que depositan.</span></h1>
-        <p class="hero__sub reveal">Del descubrimiento al primer depósito, en un mercado regulado y competitivo. <strong>Estrategia, medios, creativo y datos — bajo un mismo equipo.</strong></p>
+        <span class="eyebrow">Marketing para Minería · Construcción · Seguridad industrial</span>
+        <h1 class="hero__title" id="heroTitle">Marketing para minería y construcción que <span class="accent">genera oportunidades.</span></h1>
+        <p class="hero__sub reveal">Un sector técnico, de decisiones largas y compras que empiezan en internet. <strong>Estrategia, contenido, pauta, marca y web — bajo un mismo equipo.</strong></p>
         <div class="hero__cta reveal">
-          <a href="https://wa.me/573113721338?text=Hola%20Strago%2C%20quiero%20hablar%20sobre%20el%20marketing%20de%20mi%20casa%20de%20apuestas." class="btn-glow btn-glow--lg" target="_blank" rel="noopener" data-cursor>
+          <a href="https://wa.me/573113721338?text=Hola%20Strago%2C%20quiero%20hablar%20sobre%20el%20marketing%20de%20mi%20empresa%20de%20miner%C3%ADa%20o%20construcci%C3%B3n." class="btn-glow btn-glow--lg" target="_blank" rel="noopener" data-cursor>
             <svg viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163a11.867 11.867 0 0 1-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.817 11.817 0 0 1 8.413 3.488 11.824 11.824 0 0 1 3.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 0 1-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 0 0 1.51 5.26l-.999 3.648 3.978-1.607zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
             Hablemos de tu crecimiento
           </a>
@@ -258,8 +248,8 @@
 
       <div class="hero__col hero__col--img">
         <picture>
-          <source srcset="assets/hero.webp" type="image/webp" />
-          <img src="assets/hero.png" alt="Dados iluminados — iGaming" class="hero__img" />
+          <source srcset="assets/mineria.webp" type="image/webp" />
+          <img src="assets/mineria.png" alt="Camión minero cargado — sector minería y construcción" class="hero__img" />
         </picture>
       </div>
     </div>
@@ -273,8 +263,8 @@
     <span class="marquee__label">Trabajamos con</span>
     <div class="marquee__view">
       <div class="marquee__track">
-        <span>Google Ads</span><span>SEO</span><span>AEO · IA Search</span><span>Meta Ads</span><span>Programática</span><span>Push Ads</span><span>Diseño para conversión</span>
-        <span>Google Ads</span><span>SEO</span><span>AEO · IA Search</span><span>Meta Ads</span><span>Programática</span><span>Push Ads</span><span>Diseño para conversión</span>
+        <span>Estrategia de redes</span><span>Parrilla de contenido</span><span>Google Ads</span><span>Meta Ads</span><span>Identidad de marca</span><span>Manuales de marca</span><span>Desarrollo web</span>
+        <span>Estrategia de redes</span><span>Parrilla de contenido</span><span>Google Ads</span><span>Meta Ads</span><span>Identidad de marca</span><span>Manuales de marca</span><span>Desarrollo web</span>
       </div>
     </div>
   </div>
@@ -284,17 +274,17 @@
 <section class="sec sec--pine" id="contexto">
   <div class="wrap">
     <div class="kicker reveal">Contexto</div>
-    <h2 class="h2 reveal" style="max-width:16ch;margin-bottom:48px;">El mercado está en su mejor momento.</h2>
+    <h2 class="h2 reveal" style="max-width:16ch;margin-bottom:48px;">Tus clientes te investigan antes de llamarte.</h2>
     <div class="ctx">
       <div class="ctx__text reveal">
-        <p>El juego online crece a más del 40% al año (Coljuegos, 2024) y cada mes hay más jugadores entrando al terreno legal. <strong>El terreno está fértil.</strong></p>
-        <p>Lo que cambia es que ya no estás solo en él. Hoy hay muchas marcas buenas compitiendo por la atención del mismo jugador. Ganar ya no depende solo de tener buen producto —seguro lo tienes—, sino de saber llegarle a la persona correcta, en el momento correcto, con el mensaje correcto.</p>
-        <p>Y ahí es donde entramos. No con "más pauta", sino con una estrategia que entiende cómo decide un apostador y acompaña su recorrido: <strong>desde que descubre tu marca hasta su primer depósito.</strong></p>
+        <p>En sectores como la minería y la construcción, la decisión de compra ya no empieza con una llamada: empieza en internet. Según Gartner, un comprador B2B dedica apenas <strong>el 17% de su proceso de compra a reunirse con proveedores</strong>; el resto lo pasa investigando por su cuenta, buena parte en digital.</p>
+        <p>Eso significa que cuando un cliente potencial llega a ti, ya se formó una idea de tu empresa —o de tu competencia— sin que hablaras con él. <strong>Si no te encuentra, o encuentra una marca débil, ni siquiera entras a la conversación.</strong></p>
+        <p>Ahí es donde entramos. No con "más publicaciones", sino con una presencia digital que proyecta la solidez técnica de tu empresa y la convierte en oportunidades reales: <strong>de la estrategia y el contenido a la pauta, la marca y la web.</strong></p>
       </div>
       <div class="stat-card glass reveal">
-        <div class="stat-card__num"><span class="count" data-to="40">0</span>%</div>
-        <div class="stat-card__label">Crecimiento anual del juego online en Colombia.</div>
-        <div class="stat-card__src">Fuente: Coljuegos, 2024</div>
+        <div class="stat-card__num"><span class="count" data-to="17">0</span>%</div>
+        <div class="stat-card__label">del proceso de compra B2B se dedica a reunirse con proveedores. El resto —la mayoría— es investigación por cuenta propia.</div>
+        <div class="stat-card__src">Fuente: Gartner, The B2B Buying Journey</div>
       </div>
     </div>
   </div>
@@ -304,26 +294,26 @@
 <section class="sec" id="desafios">
   <div class="wrap">
     <div class="kicker reveal">Desafíos & soluciones</div>
-    <h2 class="h2 reveal" style="max-width:20ch;">Cómo convertimos los desafíos del iGaming en soluciones estructuradas.</h2>
+    <h2 class="h2 reveal" style="max-width:22ch;">Cómo convertimos los desafíos del sector industrial en soluciones estructuradas.</h2>
     <div class="ps-grid">
       <div class="ps-card glass reveal">
         <h3 class="ps-card__title">Problemas</h3>
         <ul class="ps-list">
-          <li><span class="ps-ic ps-ic--x">×</span><span>Regulación estricta que limita cómo y dónde pautar.</span></li>
-          <li><span class="ps-ic ps-ic--x">×</span><span>Alta competencia por la atención del mismo jugador.</span></li>
-          <li><span class="ps-ic ps-ic--x">×</span><span>Costo de adquisición elevado y difícil de controlar.</span></li>
-          <li><span class="ps-ic ps-ic--x">×</span><span>Muchos registros, pero pocos que depositan o permanecen activos.</span></li>
-          <li><span class="ps-ic ps-ic--x">×</span><span>Datos dispersos y mensajes fragmentados por canal y región.</span></li>
+          <li><span class="ps-ic ps-ic--x">×</span><span>Un negocio técnico difícil de comunicar de forma clara y atractiva.</span></li>
+          <li><span class="ps-ic ps-ic--x">×</span><span>Marca inconsistente y presencia digital débil que no refleja la solidez de la empresa.</span></li>
+          <li><span class="ps-ic ps-ic--x">×</span><span>Redes sociales sin estrategia ni constancia.</span></li>
+          <li><span class="ps-ic ps-ic--x">×</span><span>Ciclos de venta largos y pocos contactos realmente calificados.</span></li>
+          <li><span class="ps-ic ps-ic--x">×</span><span>Esfuerzos de marketing dispersos entre varios proveedores.</span></li>
         </ul>
       </div>
       <div class="ps-card ps-card--sol glass reveal">
         <h3 class="ps-card__title">Soluciones</h3>
         <ul class="ps-list">
-          <li><span class="ps-ic ps-ic--plus">+</span><span>Pautamos dentro de las reglas del mercado, con creativos y mensajes aprobados para el sector.</span></li>
-          <li><span class="ps-ic ps-ic--plus">+</span><span>Segmentación fina y mensajes por etapa para llegar primero, al jugador correcto y al costo correcto.</span></li>
-          <li><span class="ps-ic ps-ic--plus">+</span><span>Optimizamos a primer depósito y CPA real —no a clics ni impresiones—.</span></li>
-          <li><span class="ps-ic ps-ic--plus">+</span><span>Remarketing multicanal y reactivación para sostener el valor del jugador en el tiempo.</span></li>
-          <li><span class="ps-ic ps-ic--plus">+</span><span>Medición unificada y mensajes coherentes en todos los canales y regiones.</span></li>
+          <li><span class="ps-ic ps-ic--plus">+</span><span>Traducimos lo técnico en contenido claro que comunica capacidad y genera confianza.</span></li>
+          <li><span class="ps-ic ps-ic--plus">+</span><span>Identidad visual y manuales de marca que proyectan solidez y coherencia.</span></li>
+          <li><span class="ps-ic ps-ic--plus">+</span><span>Estrategia integral de redes y parrilla de contenido mensual, con constancia.</span></li>
+          <li><span class="ps-ic ps-ic--plus">+</span><span>Pauta digital orientada a generar oportunidades reales, no solo alcance.</span></li>
+          <li><span class="ps-ic ps-ic--plus">+</span><span>Un solo equipo que coordina estrategia, contenido, pauta, marca y web.</span></li>
         </ul>
       </div>
     </div>
@@ -334,89 +324,89 @@
 <section class="sec" id="servicios">
   <div class="wrap">
     <div class="kicker reveal">Servicios</div>
-    <h2 class="h2 reveal" style="max-width:20ch;">Soluciones integrales de marketing digital para iGaming, bajo un mismo techo.</h2>
+    <h2 class="h2 reveal" style="max-width:22ch;">Soluciones integrales de marketing digital para el sector industrial, bajo un mismo techo.</h2>
     <div class="svc-grid">
       <div class="svc glass reveal">
-        <h3 class="svc__title">Estrategia de marketing para iGaming</h3>
-        <p class="svc__desc">Un marco de crecimiento a largo plazo que posicione tu plataforma como una opción confiable y reconocible para los jugadores.</p>
-        <div class="svc__pills"><span>Investigación de mercado y competencia</span><span>Segmentación de jugadores</span><span>Posicionamiento de producto y bonos</span><span>Planificación de canales</span><span>Mensajes de campaña</span><span>Mapeo del embudo de depósito</span></div>
+        <h3 class="svc__title">Estrategia de redes sociales & contenido</h3>
+        <p class="svc__desc">Una estrategia integral de redes y una parrilla de contenido mensual que mantienen tu marca activa, ordenada y con propósito.</p>
+        <div class="svc__pills"><span>Estrategia integral de redes sociales</span><span>Parrilla de contenido mensual</span><span>Calendario editorial</span><span>Planificación de canales</span><span>Mensajes de campaña</span></div>
       </div>
       <div class="svc glass reveal">
-        <h3 class="svc__title">Medios pagados (Paid Media)</h3>
-        <p class="svc__desc">Capturamos demanda y generamos tráfico calificado en los canales de mayor intención, siempre optimizado a primer depósito.</p>
-        <div class="svc__pills"><span>Google Ads (SEM)</span><span>Meta Ads</span><span>Pauta programática</span><span>Push Ads</span><span>Nativos</span></div>
+        <h3 class="svc__title">Medios pagados (pauta digital)</h3>
+        <p class="svc__desc">Creación, monitoreo y optimización de pauta para llegar a las personas correctas y generar oportunidades, no solo alcance.</p>
+        <div class="svc__pills"><span>Creación de campañas</span><span>Google Ads</span><span>Meta Ads</span><span>Monitoreo</span><span>Optimización de pauta</span></div>
       </div>
       <div class="svc glass reveal">
-        <h3 class="svc__title">SEO & AEO (IA Search)</h3>
-        <p class="svc__desc">Visibilidad orgánica sostenida y presencia en las búsquedas con IA, para que te encuentren sin pagar por cada clic.</p>
-        <div class="svc__pills"><span>SEO técnico</span><span>Contenido que posiciona</span><span>AEO · búsquedas con IA</span><span>Autoridad de marca</span></div>
+        <h3 class="svc__title">Embudo de ventas</h3>
+        <p class="svc__desc">Revisamos tu embudo de ventas para entender dónde se pierden oportunidades y ordenar el camino del contacto al cliente.</p>
+        <div class="svc__pills"><span>Revisión del embudo de ventas</span><span>Diagnóstico de conversión</span><span>Puntos de fuga</span><span>Recorrido del cliente</span></div>
       </div>
       <div class="svc glass reveal">
-        <h3 class="svc__title">Email marketing</h3>
-        <p class="svc__desc">El correo fomenta los depósitos, reactiva jugadores inactivos y recompensa la fidelidad de tus jugadores.</p>
-        <div class="svc__pills"><span>Secuencias de bienvenida</span><span>Newsletters</span><span>Reactivación de inactivos</span><span>Ofertas y promociones</span><span>Automatizaciones de correo</span></div>
+        <h3 class="svc__title">Diseño & identidad de marca</h3>
+        <p class="svc__desc">Directrices de diseño, identidad visual y manuales de marca que proyectan la seriedad y solidez que este sector exige.</p>
+        <div class="svc__pills"><span>Directriz de diseño gráfico</span><span>Identidad visual</span><span>Manuales de marca</span><span>Piezas para redes</span><span>Diseño para pauta</span></div>
       </div>
       <div class="svc glass reveal">
-        <h3 class="svc__title">Diseño & creatividad</h3>
-        <p class="svc__desc">Creativos y experiencias pensados para enganchar y convertir, que se prueban y optimizan de forma continua.</p>
-        <div class="svc__pills"><span>Diseño para conversión</span><span>Creativos para pauta</span><span>Landing pages</span><span>Banners publicitarios</span><span>Reels y videos</span></div>
+        <h3 class="svc__title">Desarrollo web</h3>
+        <p class="svc__desc">Creación de la página web que respalda tus propuestas comerciales y se convierte en el centro de tu presencia digital.</p>
+        <div class="svc__pills"><span>Creación de página web</span><span>Diseño UX/UI</span><span>Orientada a conversión</span><span>Optimizada para móvil</span></div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- METODOLOGÍA 6 FASES -->
+<!-- METODOLOGÍA -->
 <section class="sec" id="metodologia">
   <div class="wrap">
     <div class="kicker reveal">Metodología</div>
-    <h2 class="h2 reveal" style="max-width:22ch;">Nuestra metodología de marketing de iGaming en 5 fases, de eficacia comprobada.</h2>
+    <h2 class="h2 reveal" style="max-width:24ch;">Nuestra metodología de marketing para minería y construcción en 5 fases.</h2>
     <div class="mtl">
       <div class="mtl__row reveal">
-        <div class="mtl__left"><span class="mtl__badge">Fase 1</span><h3 class="mtl__title">Descubrimiento y análisis de mercado</h3></div>
+        <div class="mtl__left"><span class="mtl__badge">Fase 1</span><h3 class="mtl__title">Descubrimiento y análisis</h3></div>
         <ul class="mtl__list">
-          <li>Investigación exhaustiva sobre el panorama del iGaming y el comportamiento de los jugadores.</li>
-          <li>Análisis comparativo del mercado y de la competencia.</li>
-          <li>Segmentación de jugadores según sus preferencias de juego.</li>
-          <li>Análisis de producto, posicionamiento de bonificaciones y oportunidades de canal.</li>
+          <li>Investigación del sector, del mercado y de la competencia.</li>
+          <li>Diagnóstico de tu marca y de tu presencia digital actual.</li>
+          <li>Definición del público objetivo y de sus intereses.</li>
+          <li>Análisis de oportunidades por canal.</li>
         </ul>
       </div>
       <div class="mtl__line" aria-hidden="true"></div>
       <div class="mtl__row reveal">
-        <div class="mtl__left"><span class="mtl__badge">Fase 2</span><h3 class="mtl__title">Estrategia y planificación del crecimiento</h3></div>
+        <div class="mtl__left"><span class="mtl__badge">Fase 2</span><h3 class="mtl__title">Estrategia y planificación</h3></div>
         <ul class="mtl__list">
-          <li>Desarrollo de estrategias integrales de marketing para iGaming.</li>
-          <li>Combinación de canales y marco de mensajes de campaña.</li>
-          <li>Mapeo del recorrido del jugador y del embudo de depósitos.</li>
-          <li>Configuración de la arquitectura de seguimiento.</li>
+          <li>Estrategia integral de redes sociales.</li>
+          <li>Planificación de canales y de mensajes de campaña.</li>
+          <li>Calendario editorial y estructura de la parrilla de contenido.</li>
+          <li>Definición de la arquitectura de medición.</li>
         </ul>
       </div>
       <div class="mtl__line" aria-hidden="true"></div>
       <div class="mtl__row reveal">
-        <div class="mtl__left"><span class="mtl__badge">Fase 3</span><h3 class="mtl__title">Lanzamiento de generación de demanda</h3></div>
+        <div class="mtl__left"><span class="mtl__badge">Fase 3</span><h3 class="mtl__title">Contenido y activación</h3></div>
         <ul class="mtl__list">
-          <li>PPC y campañas sociales de pago para jugadores con alta intención.</li>
-          <li>Implementación de la estrategia SEO y AEO con configuración técnica y palabras clave.</li>
-          <li>Pauta programática y push para ampliar el alcance en audiencias afines.</li>
-          <li>Lanzamiento de creativos probados, por canal y por evento.</li>
+          <li>Producción de la parrilla de contenido mensual.</li>
+          <li>Diseño de piezas alineado a tu identidad de marca.</li>
+          <li>Creación y lanzamiento de la pauta digital.</li>
+          <li>Puesta en marcha de campañas por canal.</li>
         </ul>
       </div>
       <div class="mtl__line" aria-hidden="true"></div>
       <div class="mtl__row reveal">
         <div class="mtl__left"><span class="mtl__badge">Fase 4</span><h3 class="mtl__title">Optimización de la conversión</h3></div>
         <ul class="mtl__list">
-          <li>Revisión de UX y CRO de los flujos de registro.</li>
-          <li>Optimización de páginas de destino y depósitos.</li>
-          <li>Pruebas A/B en páginas de promoción y solicitudes de bonificación.</li>
-          <li>Integración de mapas de calor de comportamiento.</li>
+          <li>Revisión del embudo de ventas.</li>
+          <li>Monitoreo y optimización continua de la pauta.</li>
+          <li>Ajuste de mensajes y creativos según resultados.</li>
+          <li>Identificación y corrección de puntos de fuga.</li>
         </ul>
       </div>
       <div class="mtl__line" aria-hidden="true"></div>
       <div class="mtl__row reveal">
-        <div class="mtl__left"><span class="mtl__badge">Fase 5</span><h3 class="mtl__title">Análisis, diseño y escalabilidad</h3></div>
+        <div class="mtl__left"><span class="mtl__badge">Fase 5</span><h3 class="mtl__title">Análisis, marca y escalabilidad</h3></div>
         <ul class="mtl__list">
-          <li>Paneles de rendimiento y análisis de canales.</li>
-          <li>Perfeccionamiento del diseño digital para creativos y embudos de conversión.</li>
-          <li>Producción visual para campañas y recursos.</li>
+          <li>Reportes de rendimiento y análisis por canal.</li>
+          <li>Refuerzo de la identidad visual y de los manuales de marca.</li>
+          <li>Producción visual para nuevas campañas.</li>
           <li>Optimización continua e iteración estratégica.</li>
         </ul>
       </div>
@@ -428,16 +418,13 @@
 <section class="sec" id="verticales">
   <div class="wrap" style="text-align:center;">
     <div class="kicker reveal" style="justify-content:center;">Verticales</div>
-    <h2 class="h2 reveal" style="max-width:18ch;margin:0 auto;">Las verticales de iGaming que potenciamos.</h2>
+    <h2 class="h2 reveal" style="max-width:18ch;margin:0 auto;">Los sectores que potenciamos.</h2>
     <div class="vpills reveal">
-      <span class="vpill">Apuestas deportivas</span>
-      <span class="vpill vpill--hot">Casino online</span>
-      <span class="vpill">Lotería</span>
-      <span class="vpill">Bingo</span>
-      <span class="vpill vpill--hot">Casino en vivo</span>
-      <span class="vpill">e-gaming</span>
+      <span class="vpill vpill--hot">Minería</span>
+      <span class="vpill vpill--hot">Construcción</span>
+      <span class="vpill vpill--hot">Seguridad industrial</span>
     </div>
-    <a href="#contacto" class="btn-glow btn-glow--lg vpills__cta reveal" data-cursor>Resolvamos tu marketing de iGaming</a>
+    <a href="#contacto" class="btn-glow btn-glow--lg vpills__cta reveal" data-cursor>Resolvamos el marketing de tu empresa</a>
   </div>
 </section>
 
@@ -447,11 +434,11 @@
     <div class="kicker reveal">Por qué Strago</div>
     <h2 class="h2 reveal" style="max-width:14ch;">Por qué elegirnos.</h2>
     <div class="why-grid">
-      <div class="why glass reveal" data-cursor><div class="why__n">01</div><div><div class="why__title">Hablamos tu idioma.</div><p class="why__body">No te vamos a presumir "likes". Pensamos en costo por adquisición, en primer depósito, en cuánto vale un jugador. Tus métricas son las nuestras.</p></div></div>
-      <div class="why glass reveal" data-cursor><div class="why__n">02</div><div><div class="why__title">Conocemos el sector.</div><p class="why__body">Sabemos cómo decide un apostador y qué se necesita para pautar en un mercado como este. No aprendemos tu negocio sobre la marcha.</p></div></div>
-      <div class="why glass reveal" data-cursor><div class="why__n">03</div><div><div class="why__title">Conocemos el cumplimiento normativo.</div><p class="why__body">Sabemos cómo pautar dentro de las reglas de un mercado regulado (Coljuegos y afines), con creativos y mensajes aprobados. Crecimiento sin arriesgar tu operación ni tu licencia.</p></div></div>
-      <div class="why glass reveal" data-cursor><div class="why__n">04</div><div><div class="why__title">Un solo equipo para todo el embudo.</div><p class="why__body">Marca, pauta, contenido y posicionamiento bajo un mismo techo, coordinados. Sin unir proveedores que no se hablan entre sí.</p></div></div>
-      <div class="why glass reveal" data-cursor><div class="why__n">05</div><div><div class="why__title">Jugamos para que te vaya bien.</div><p class="why__body">Tu crecimiento es la razón por la que existimos. Cuando tú creces, nosotros también.</p></div></div>
+      <div class="why glass reveal" data-cursor><div class="why__n">01</div><div><div class="why__title">Traducimos lo técnico.</div><p class="why__body">Convertimos un negocio complejo en mensajes claros que comunican tu capacidad y generan confianza en tu cliente.</p></div></div>
+      <div class="why glass reveal" data-cursor><div class="why__n">02</div><div><div class="why__title">Marca sólida y coherente.</div><p class="why__body">Identidad visual y manuales de marca que proyectan la seriedad y el rigor que este sector exige para vender.</p></div></div>
+      <div class="why glass reveal" data-cursor><div class="why__n">03</div><div><div class="why__title">Orientados a resultados.</div><p class="why__body">Revisamos el embudo de ventas y optimizamos la pauta pensando en oportunidades reales, no en métricas de vanidad.</p></div></div>
+      <div class="why glass reveal" data-cursor><div class="why__n">04</div><div><div class="why__title">Un solo equipo para todo.</div><p class="why__body">Estrategia, contenido, pauta, diseño y web coordinados bajo un mismo techo. Sin unir proveedores que no se hablan entre sí.</p></div></div>
+      <div class="why glass reveal" data-cursor><div class="why__n">05</div><div><div class="why__title">Ejecución constante.</div><p class="why__body">Parrilla mensual y monitoreo continuo para mantener tu presencia activa, ordenada y creciendo en el tiempo.</p></div></div>
     </div>
   </div>
 </section>
@@ -460,10 +447,10 @@
 <section class="final" id="contacto">
   <div class="wrap">
     <div class="kicker reveal" style="justify-content:center;">Siguiente paso</div>
-    <h2 id="finalText">El mercado está creciendo. Lo que falta por decidir es qué tan rápido creces tú.</h2>
-    <p class="reveal">Cuéntanos sobre tu operación y veamos hasta dónde podemos llevarla.</p>
+    <h2 id="finalText">Tus clientes ya te están buscando en internet. La pregunta es si te encuentran.</h2>
+    <p class="reveal">Cuéntanos sobre tu empresa y diseñemos la presencia digital que tu sector merece.</p>
     <div class="reveal">
-      <a href="https://wa.me/573113721338?text=Hola%20Strago%2C%20quiero%20hablar%20sobre%20el%20marketing%20de%20mi%20casa%20de%20apuestas." class="btn-glow btn-glow--lg" target="_blank" rel="noopener" data-cursor>
+      <a href="https://wa.me/573113721338?text=Hola%20Strago%2C%20quiero%20hablar%20sobre%20el%20marketing%20de%20mi%20empresa%20industrial." class="btn-glow btn-glow--lg" target="_blank" rel="noopener" data-cursor>
         <svg viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163a11.867 11.867 0 0 1-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.817 11.817 0 0 1 8.413 3.488 11.824 11.824 0 0 1 3.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 0 1-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 0 0 1.51 5.26l-.999 3.648 3.978-1.607zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
         Hablemos de tu crecimiento
       </a>
@@ -475,7 +462,7 @@
 <footer class="foot">
   <div class="wrap">
     <div class="foot__top">
-      <a href="index.html#inicio" class="foot__logo"><span class="b">Strago</span> <span class="l">Studio</span></a>
+      <a href="index.html#inicio" class="foot__logo" aria-label="Strago Studio — inicio"><img src="assets/logo.png" alt="Strago Studio" class="logo-img" /></a>
       <nav class="foot__links" aria-label="Links">
         <a href="index.html#servicios">Servicios</a>
         <a href="index.html#industrias">Industrias</a>
@@ -485,7 +472,7 @@
       </nav>
     </div>
     <p class="foot__src">
-      Fuentes: Crecimiento del juego online — Coljuegos (2024). Participación de Google en búsquedas y CTR por posición — StatCounter y estudios de CTR 2025–2026. Acceso desde el celular y personas activas en redes — DataReportal, Digital 2025: Colombia. Adopción de búsqueda con IA — OpenAI / Alphabet (datos públicos, 2025).
+      Fuente: Gartner, «The B2B Buying Journey» — los compradores B2B dedican en promedio el 17% de su proceso de compra a reunirse con proveedores; el resto se dedica a investigación independiente, buena parte en canales digitales.
     </p>
     <p class="foot__copy">© 2025 Strago Studio. Adquisición. Performance. Resultados.</p>
   </div>
