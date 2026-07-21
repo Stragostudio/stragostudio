@@ -1,3 +1,14 @@
 # Redirección de la URL antigua de iGaming a la nueva
 /casas-de-apuestas       /igaming-marketing       301
 /casas-de-apuestas.html  /igaming-marketing       301
+
+# URLs con .html → versión limpia (canónica)
+/index.html                            /                                 301
+/blog.html                             /blog                             301
+/nosotros.html                         /nosotros                         301
+/igaming-marketing.html                /igaming-marketing                301
+/mineria-construccion.html             /mineria-construccion             301
+/blog-cpa-vs-cac.html                  /blog-cpa-vs-cac                  301
+/blog-aeo-chatgpt-gemini.html          /blog-aeo-chatgpt-gemini          301
+/blog-marketing-igaming-colombia.html  /blog-marketing-igaming-colombia  301
+/blog-embudo-primer-deposito.html      /blog-embudo-primer-deposito      301

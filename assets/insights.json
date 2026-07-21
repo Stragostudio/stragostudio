@@ -6,7 +6,7 @@
       "category": "Métricas",
       "date": "2026-07-15",
       "readingTime": "5 min",
-      "url": "blog-cpa-vs-cac.html",
+      "url": "/blog-cpa-vs-cac",
       "image": "assets/cover-cpa-vs-cac.png"
     },
     {
@@ -15,7 +15,7 @@
       "category": "SEO / IA",
       "date": "2026-07-14",
       "readingTime": "6 min",
-      "url": "blog-aeo-chatgpt-gemini.html",
+      "url": "/blog-aeo-chatgpt-gemini",
       "image": "assets/cover-aeo-chatgpt-gemini.png"
     },
     {
@@ -24,7 +24,7 @@
       "category": "iGaming",
       "date": "2026-07-13",
       "readingTime": "8 min",
-      "url": "blog-marketing-igaming-colombia.html",
+      "url": "/blog-marketing-igaming-colombia",
       "image": "assets/cover-marketing-igaming-colombia.png"
     },
     {
@@ -33,7 +33,7 @@
       "category": "Estrategia",
       "date": "2026-07-12",
       "readingTime": "6 min",
-      "url": "blog-embudo-primer-deposito.html",
+      "url": "/blog-embudo-primer-deposito",
       "image": "assets/cover-embudo-primer-deposito.png"
     }
   ]
