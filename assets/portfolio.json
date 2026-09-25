@@ -1,0 +1,32 @@
+{
+  "projects": [
+    {
+      "brand": "Don Ocampo",
+      "work": "Diseño de bolsa",
+      "sector": "Café",
+      "image": "assets/portfolio-don-ocampo.png",
+      "alt": "Packaging de café Don Ocampo — Café de Origen, Abejorral (Antioquia), con ilustración de turpial"
+    },
+    {
+      "brand": "Café de la Isla",
+      "work": "Identidad + diseño de bolsa",
+      "sector": "Café",
+      "image": "assets/portfolio-cafe-de-la-isla-1.png",
+      "alt": "Packaging Café de la Isla (San Andrés y Providencia) con ilustración de cangrejo y pez loro"
+    },
+    {
+      "brand": "Café de la Isla",
+      "work": "Identidad + diseño de bolsa",
+      "sector": "Café",
+      "image": "assets/portfolio-cafe-de-la-isla-2.png",
+      "alt": "Packaging Café de la Isla con ilustración de tortuga y estrella de mar"
+    },
+    {
+      "brand": "Monkoffee",
+      "work": "Identidad + diseño de bolsa",
+      "sector": "Café",
+      "image": "assets/portfolio-monkoffee.png",
+      "alt": "Packaging Monkoffee con ilustración estilo japonés de olas"
+    }
+  ]
+}
