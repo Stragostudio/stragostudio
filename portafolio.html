@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portafolio | Strago Studio — Diseño gráfico y packaging</title>
+  <meta name="description" content="Portafolio de diseño gráfico e identidad de marca de Strago Studio. Empezamos por nuestro trabajo de packaging y diseño de bolsas para el sector del café." />
+  <link rel="canonical" href="https://stragostudio.com/portafolio" />
+  <meta property="og:title" content="Portafolio | Strago Studio" />
+  <meta property="og:description" content="Diseño gráfico, identidad de marca y packaging. Nuestro trabajo real para el sector del café." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://stragostudio.com/portafolio" />
+  <meta property="og:image" content="https://stragostudio.com/assets/portfolio-cafe-portada.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="https://stragostudio.com/assets/portfolio-cafe-portada.jpg" />
+  <meta name="theme-color" content="#050506" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "Portafolio de Strago Studio",
+    "description": "Portafolio de diseño gráfico, identidad de marca y packaging.",
+    "url": "https://stragostudio.com/portafolio",
+    "isPartOf": { "@type": "WebSite", "name": "Strago Studio", "url": "https://stragostudio.com/" }
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/png" href="assets/favicon.png" />
+  <link rel="apple-touch-icon" href="assets/favicon.png" />
+
+  <style>
+    :root { --black:#050506; --copper:#C25E45; --copper-2:#D97A5E; --cream:#F5F1EB; --line:rgba(255,255,255,.10); --muted:rgba(245,241,235,.55); --pad:clamp(20px,5vw,48px); }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Inter', sans-serif; background: var(--black); color: var(--cream); overflow-x: clip; -webkit-font-smoothing: antialiased; line-height: 1.5; min-height: 100vh; }
+    h1, h2, h3 { font-family: 'Inter', sans-serif; }
+    a { color: inherit; }
+    img { display: block; max-width: 100%; }
+    ::selection { background: var(--copper); color: #fff; }
+    .wrap { max-width: 1160px; margin: 0 auto; padding: 0 var(--pad); }
+
+    .navbar { position: fixed; top: 0; left: 0; right: 0; z-index: 100; display: flex; align-items: center; justify-content: space-between; padding: 18px var(--pad); }
+    .navbar.scrolled { background: rgba(5,5,6,.72); -webkit-backdrop-filter: blur(16px); backdrop-filter: blur(16px); border-bottom: 1px solid var(--line); }
+    .logo { text-decoration: none; display: inline-flex; align-items: center; }
+    .logo .logo-img { height: 34px; width: auto; display: block; }
+    .nav-links { display: flex; align-items: center; gap: 2px; background: linear-gradient(180deg, rgba(255,255,255,.08), rgba(255,255,255,.02)); border: 1px solid rgba(255,255,255,.16); border-radius: 100px; padding: 9px 22px; -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px); box-shadow: 0 0 46px rgba(255,255,255,.10); }
+    .nav-links a { color: rgba(245,241,235,.55); text-decoration: none; font-size: 13.5px; font-weight: 500; padding: 6px 15px; border-radius: 100px; transition: color .2s; white-space: nowrap; }
+    .nav-links a:hover, .nav-links a.active { color: var(--cream); }
+    .nav-drop { position: relative; display: inline-flex; align-items: center; }
+    .nav-drop__trigger { display: inline-flex !important; align-items: center; gap: 5px; }
+    .nav-drop__chev { width: 11px; height: 11px; transition: transform .25s ease; opacity: .7; }
+    .nav-drop:hover .nav-drop__chev { transform: rotate(180deg); }
+    .nav-drop__panel { position: absolute; top: 100%; left: 50%; transform: translateX(-50%) translateY(10px); min-width: 250px; display: flex; flex-direction: column; gap: 2px; padding: 8px; background: rgba(10,10,12,.95); -webkit-backdrop-filter: blur(18px); backdrop-filter: blur(18px); border: 1px solid rgba(255,255,255,.12); border-radius: 16px; box-shadow: 0 24px 60px rgba(0,0,0,.55); opacity: 0; pointer-events: none; transition: opacity .25s ease, transform .25s ease; }
+    .nav-drop__panel::before { content: ''; position: absolute; top: -14px; left: 0; right: 0; height: 14px; }
+    .nav-drop:hover .nav-drop__panel { opacity: 1; pointer-events: auto; transform: translateX(-50%) translateY(4px); }
+    .nav-drop__panel a { display: flex !important; align-items: center; justify-content: space-between; gap: 14px; padding: 10px 14px !important; border-radius: 10px !important; font-size: 13.5px; color: rgba(245,241,235,.72) !important; white-space: nowrap; }
+    .nav-drop__panel a:hover { background: rgba(255,255,255,.06); color: #fff !important; }
+    .nav-drop__tag { font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: .06em; color: var(--copper-2); border: 1px solid rgba(194,94,69,.4); border-radius: 100px; padding: 2px 8px; }
+    .nav-cta { display: inline-flex; align-items: center; background: rgba(13,14,11,.45); -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px); color: var(--cream); font-size: 13.5px; font-weight: 700; padding: 9px 22px; border-radius: 100px; text-decoration: none; position: relative; box-shadow: 0 0 22px rgba(194,94,69,.22); }
+    .nav-cta::before { content: ''; position: absolute; inset: 0; border-radius: 100px; padding: 1.5px; background: linear-gradient(135deg, var(--copper), rgba(245,241,235,.6) 50%, var(--copper-2)); -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0); -webkit-mask-composite: xor; mask-composite: exclude; pointer-events: none; }
+    .nav-toggle { display: none; flex-direction: column; gap: 5px; width: 42px; height: 42px; align-items: center; justify-content: center; background: rgba(255,255,255,.06); border: 1px solid rgba(255,255,255,.14); border-radius: 12px; cursor: pointer; }
+    .nav-toggle span { width: 18px; height: 2px; background: #fff; border-radius: 2px; transition: transform .3s, opacity .3s; }
+    .nav-toggle.open span:nth-child(1){ transform: translateY(7px) rotate(45deg); }
+    .nav-toggle.open span:nth-child(2){ opacity: 0; }
+    .nav-toggle.open span:nth-child(3){ transform: translateY(-7px) rotate(-45deg); }
+    .mmenu { position: fixed; top: 0; left: 0; right: 0; z-index: 99; display: flex; flex-direction: column; gap: 2px; padding: 92px 24px 28px; background: rgba(5,5,6,.94); -webkit-backdrop-filter: blur(20px); backdrop-filter: blur(20px); border-bottom: 1px solid var(--line); transform: translateY(-110%); opacity: 0; pointer-events: none; transition: transform .42s cubic-bezier(.22,.61,.36,1), opacity .3s; }
+    .mmenu.open { transform: translateY(0); opacity: 1; pointer-events: auto; }
+    .mmenu a { color: rgba(255,255,255,.82); text-decoration: none; font-size: 18px; font-weight: 600; padding: 15px 6px; border-bottom: 1px solid rgba(255,255,255,.06); }
+    .mmenu .mcta { margin-top: 16px; text-align: center; background: var(--copper); color: #fff; border-radius: 14px; padding: 15px; border-bottom: none; }
+
+    .head { position: relative; padding: 150px var(--pad) 24px; overflow: hidden; }
+    .head__glow { position: absolute; top: -10%; left: 8%; width: 50vw; max-width: 620px; height: 50vw; max-height: 620px; border-radius: 50%; background: radial-gradient(circle, rgba(194,94,69,.20), transparent 62%); filter: blur(30px); pointer-events: none; }
+    .head .wrap { position: relative; max-width: 760px; }
+    .eyebrow { font-size: 12px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: var(--copper); margin-bottom: 16px; }
+    .head h1 { font-size: clamp(34px, 5.5vw, 60px); font-weight: 800; letter-spacing: -.035em; line-height: 1.05; color: #fff; }
+    .head p { font-size: clamp(16px,1.7vw,19px); color: rgba(245,241,235,.66); max-width: 600px; margin-top: 20px; line-height: 1.6; }
+
+    .pf { padding: 30px var(--pad) 40px; }
+    .pf__featured { border-radius: 20px; overflow: hidden; border: 1px solid var(--line); margin-bottom: 40px; background: linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.01)); }
+    .pf__featured img { width: 100%; height: auto; display: block; }
+    .pf__section-title { font-size: 13px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); margin: 8px 0 22px; }
+    .pf-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 24px; }
+    .pf-card { border: 1px solid var(--line); border-radius: 18px; overflow: hidden; background: linear-gradient(180deg, rgba(255,255,255,.05), rgba(255,255,255,.015)); opacity: 0; transform: translateY(24px); transition: transform .3s, border-color .3s, box-shadow .3s; }
+    .pf-card.in { opacity: 1; transform: none; transition: opacity .6s ease, transform .6s ease; }
+    .pf-card:hover { transform: translateY(-6px); border-color: rgba(194,94,69,.35); box-shadow: 0 24px 50px rgba(0,0,0,.45); }
+    .pf-card__media { background: #0d0e12; }
+    .pf-card__media img { width: 100%; height: auto; display: block; }
+    .pf-card__body { padding: 20px 22px 24px; }
+    .pf-card__tag { font-size: 11px; font-weight: 700; letter-spacing: .05em; text-transform: uppercase; color: var(--copper-2); }
+    .pf-card__brand { font-size: 20px; font-weight: 700; color: #fff; letter-spacing: -.02em; margin-top: 6px; }
+    .pf-empty { color: rgba(255,255,255,.4); font-size: 15px; }
+
+    .pf-cta { margin: 46px auto 0; max-width: 760px; padding: 32px; border-radius: 18px; border: 1px solid var(--line); background: linear-gradient(180deg, rgba(194,94,69,.10), rgba(255,255,255,.015)); text-align: center; }
+    .pf-cta h3 { font-size: 22px; font-weight: 700; color: #fff; margin-bottom: 8px; }
+    .pf-cta p { color: var(--muted); font-size: 15px; max-width: 480px; margin: 0 auto; }
+    .pf-cta a { display: inline-block; margin-top: 18px; background: var(--copper); color: #fff; padding: 13px 28px; border-radius: 100px; text-decoration: none; font-weight: 600; font-size: 15px; }
+
+    .foot { border-top: 1px solid var(--line); padding: 48px var(--pad); margin-top: 40px; }
+    .foot .wrap { display: flex; justify-content: space-between; align-items: center; gap: 24px; flex-wrap: wrap; }
+    .foot a.flogo { text-decoration: none; display: inline-flex; align-items: center; }
+    .foot a.flogo .logo-img { height: 38px; width: auto; display: block; }
+    .foot__links { display: flex; gap: 20px; flex-wrap: wrap; }
+    .foot__links a { font-size: 13.5px; color: var(--muted); text-decoration: none; transition: color .2s; }
+    .foot__links a:hover { color: var(--cream); }
+
+    @media (max-width: 900px) { .nav-links { display: none; } .nav-toggle { display: flex; } .nav-cta { display: none; } }
+    @media (max-width: 600px) { .head { padding-top: 128px; } .pf-grid { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+
+<nav class="navbar" id="nav">
+  <a href="/#inicio" class="logo" aria-label="Strago Studio — inicio"><img src="assets/logo.png" alt="Strago Studio" class="logo-img" /></a>
+  <div class="nav-links">
+    <a href="/#servicios">Servicios</a>
+    <div class="nav-drop">
+      <a href="/#industrias" class="nav-drop__trigger">Industrias<svg class="nav-drop__chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></a>
+      <div class="nav-drop__panel">
+        <a href="/igaming-marketing">iGaming <span class="nav-drop__tag">Ver</span></a>
+        <a href="/mineria-construccion">Minería &amp; Construcción <span class="nav-drop__tag">Ver</span></a>
+        <a href="/#industrias">E-commerce</a>
+        <a href="/#industrias">SaaS · Apps</a>
+        <a href="/#industrias">Bienes raíces</a>
+      </div>
+    </div>
+    <a href="/portafolio" class="active">Portafolio</a>
+    <a href="/nosotros">Nosotros</a>
+    <a href="/blog">Blog</a>
+    <a href="/#contacto">Contacto</a>
+  </div>
+  <a href="/#contacto" class="nav-cta">Hablemos</a>
+  <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false"><span></span><span></span><span></span></button>
+</nav>
+
+<div class="mmenu" id="mmenu" aria-hidden="true">
+  <a href="/#servicios">Servicios</a>
+  <a href="/#industrias">Industrias</a>
+  <a href="/portafolio">Portafolio</a>
+  <a href="/nosotros">Nosotros</a>
+  <a href="/blog">Blog</a>
+  <a href="/#contacto">Contacto</a>
+  <a href="/#contacto" class="mcta">Hablemos</a>
+</div>
+
+<header class="head">
+  <div class="head__glow" aria-hidden="true"></div>
+  <div class="wrap">
+    <div class="eyebrow">Portafolio</div>
+    <h1>Nuestro trabajo.</h1>
+    <p>Diseño gráfico e identidad de marca. Empezamos mostrando nuestro trabajo de packaging y diseño de bolsas para el sector del café.</p>
+  </div>
+</header>
+
+<main class="pf">
+  <div class="wrap">
+    <div class="pf__featured">
+      <img src="assets/portfolio-cafe-portada.jpg" alt="Colección de packaging de café diseñada por Strago Studio: Don Ocampo, Café de la Isla y Monkoffee" />
+    </div>
+
+    <div class="pf__section-title">Packaging &amp; identidad · Café</div>
+    <div class="pf-grid" id="pfGrid" aria-live="polite"></div>
+
+    <div class="pf-cta">
+      <h3>¿Tienes un producto que merece verse así de bien?</h3>
+      <p>Diseñamos identidad de marca y packaging que hacen que tu producto destaque en el anaquel.</p>
+      <a href="/#contacto">Hablemos de tu marca</a>
+    </div>
+  </div>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <a href="/#inicio" class="flogo" aria-label="Strago Studio — inicio"><img src="assets/logo.png" alt="Strago Studio" class="logo-img" /></a>
+    <nav class="foot__links" aria-label="Links">
+      <a href="/#servicios">Servicios</a>
+      <a href="/#industrias">Industrias</a>
+      <a href="/portafolio">Portafolio</a>
+      <a href="/nosotros">Nosotros</a>
+      <a href="/blog">Blog</a>
+      <a href="/#contacto">Contacto</a>
+      <a href="https://www.linkedin.com/company/strago-studio" target="_blank" rel="noopener">LinkedIn</a>
+    </nav>
+  </div>
+</footer>
+
+<script>
+  (function () {
+    var nav = document.getElementById('nav');
+    window.addEventListener('scroll', function () { nav.classList.toggle('scrolled', window.scrollY > 40); }, { passive: true });
+    var t = document.getElementById('navToggle'), m = document.getElementById('mmenu');
+    function setOpen(o) { t.classList.toggle('open', o); m.classList.toggle('open', o); t.setAttribute('aria-expanded', o); m.setAttribute('aria-hidden', !o); document.body.style.overflow = o ? 'hidden' : ''; }
+    t.addEventListener('click', function () { setOpen(!m.classList.contains('open')); });
+    m.querySelectorAll('a').forEach(function (a) { a.addEventListener('click', function () { setOpen(false); }); });
+  })();
+
+  /* Render del portafolio desde assets/portfolio.json */
+  (function () {
+    var grid = document.getElementById('pfGrid');
+    if (!grid) return;
+    function esc(s) { return String(s == null ? '' : s).replace(/[&<>"]/g, function (c) { return ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' })[c]; }); }
+    function render(items) {
+      if (!items || !items.length) { grid.innerHTML = '<p class="pf-empty">Pronto sumaremos más proyectos.</p>'; return; }
+      grid.innerHTML = items.map(function (p) {
+        return '<figure class="pf-card">' +
+          '<div class="pf-card__media"><img loading="lazy" src="' + esc(p.image) + '" alt="' + esc(p.alt || p.brand) + '" /></div>' +
+          '<figcaption class="pf-card__body"><span class="pf-card__tag">' + esc(p.sector || '') + (p.work ? ' · ' + esc(p.work) : '') + '</span>' +
+          '<div class="pf-card__brand">' + esc(p.brand) + '</div></figcaption></figure>';
+      }).join('');
+      var cards = grid.querySelectorAll('.pf-card');
+      if ('IntersectionObserver' in window) {
+        var io = new IntersectionObserver(function (es) { es.forEach(function (e, i) { if (e.isIntersecting) { e.target.style.transitionDelay = (i % 3 * 80) + 'ms'; e.target.classList.add('in'); io.unobserve(e.target); } }); }, { threshold: .12 });
+        cards.forEach(function (c) { io.observe(c); });
+      } else { cards.forEach(function (c) { c.classList.add('in'); }); }
+    }
+    fetch('assets/portfolio.json', { cache: 'no-cache' })
+      .then(function (r) { if (!r.ok) throw new Error('http'); return r.json(); })
+      .then(function (d) { render(d.projects || []); })
+      .catch(function () { grid.innerHTML = '<p class="pf-empty">Pronto sumaremos más proyectos.</p>'; });
+  })();
+</script>
+
+</body>
+</html>
