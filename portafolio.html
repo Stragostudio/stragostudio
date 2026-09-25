@@ -99,6 +99,15 @@
     .pf-dot { width: 8px; height: 8px; border-radius: 50%; background: rgba(255,255,255,.25); border: none; cursor: pointer; padding: 0; transition: background .25s, width .25s; }
     .pf-dot.active { background: var(--copper); width: 24px; border-radius: 100px; }
     .pf-empty { text-align: center; color: rgba(255,255,255,.4); font-size: 15px; padding: 60px 0; }
+    .pf-glow { position: absolute; top: 46%; left: 50%; transform: translate(-50%, -50%); width: min(560px, 82vw); height: min(560px, 82vw); border-radius: 50%; background: radial-gradient(circle, rgba(194,94,69,.32), rgba(194,94,69,.10) 46%, transparent 68%); filter: blur(30px); z-index: 0; pointer-events: none; }
+    .pf-hint { text-align: center; margin-top: 16px; font-size: 12.5px; color: rgba(245,241,235,.42); }
+    .pf-hint span { color: var(--copper-2); }
+    .pf-lb { position: fixed; inset: 0; z-index: 200; background: rgba(5,5,6,.9); -webkit-backdrop-filter: blur(8px); backdrop-filter: blur(8px); display: flex; align-items: center; justify-content: center; padding: 48px 20px; opacity: 0; pointer-events: none; transition: opacity .3s ease; }
+    .pf-lb.open { opacity: 1; pointer-events: auto; }
+    .pf-lb img { max-width: min(92vw, 620px); max-height: 86vh; width: auto; height: auto; border-radius: 16px; box-shadow: 0 40px 90px rgba(0,0,0,.6); }
+    .pf-lb__close { position: absolute; top: 20px; right: 24px; width: 44px; height: 44px; border-radius: 50%; background: rgba(255,255,255,.08); border: 1px solid rgba(255,255,255,.18); color: #fff; font-size: 20px; line-height: 1; cursor: pointer; display: grid; place-items: center; }
+    .pf-lb__close:hover { background: var(--copper); border-color: var(--copper); }
+    .pf-lb__cap { position: absolute; bottom: 24px; left: 0; right: 0; text-align: center; color: rgba(245,241,235,.7); font-size: 14px; padding: 0 20px; }
 
     .pf-cta { margin: 56px auto 0; max-width: 760px; padding: 32px var(--pad); border-radius: 18px; border: 1px solid var(--line); background: linear-gradient(180deg, rgba(194,94,69,.10), rgba(255,255,255,.015)); text-align: center; }
     .pf-cta h3 { font-size: 22px; font-weight: 700; color: #fff; margin-bottom: 8px; }
@@ -170,6 +179,7 @@
 
 <main class="pf">
   <div class="pf-stage" id="pfStage">
+    <div class="pf-glow" aria-hidden="true"></div>
     <div class="pf-scene" id="pfScene">
       <div class="pf-track" id="pfTrack"></div>
     </div>
@@ -178,6 +188,7 @@
   </div>
   <div class="pf-caption" id="pfCaption" aria-live="polite"></div>
   <div class="pf-dots" id="pfDots" role="tablist" aria-label="Proyectos"></div>
+  <p class="pf-hint">Arrastra, usa las flechas <span>← →</span> o toca el diseño para verlo en detalle</p>
 
   <div class="pf-cta">
     <h3>¿Tienes un producto que merece verse así de bien?</h3>
@@ -185,6 +196,12 @@
     <a href="/#contacto">Hablemos de tu marca</a>
   </div>
 </main>
+
+<div class="pf-lb" id="pfLb" aria-hidden="true">
+  <button class="pf-lb__close" id="pfLbClose" type="button" aria-label="Cerrar">✕</button>
+  <img id="pfLbImg" src="" alt="" />
+  <div class="pf-lb__cap" id="pfLbCap"></div>
+</div>
 
 <footer class="foot">
   <div class="wrap">
@@ -236,7 +253,7 @@
         var a = Math.abs(off), s = off < 0 ? -1 : 1, ca = Math.min(a, 2.4);
         if (a > 2.4) { el.style.visibility = 'hidden'; el.style.opacity = '0'; el.style.pointerEvents = 'none'; return; }
         el.style.visibility = 'visible';
-        el.style.pointerEvents = a === 0 ? 'none' : 'auto';
+        el.style.pointerEvents = 'auto';
         el.style.zIndex = String(100 - Math.round(a * 10));
         el.style.opacity = a === 0 ? '1' : (a <= 1 ? '0.65' : '0.28');
         var tx = s * ca * spread, tz = -ca * 210, ry = -s * ca * 34, sc = 1 - ca * 0.12;
@@ -261,7 +278,7 @@
           return '<figure class="pf-item"><div class="pf-item__inner"><img loading="lazy" src="' + esc(p.image) + '" alt="' + esc(p.alt || p.brand) + '" /></div></figure>';
         }).join('');
         items = Array.prototype.slice.call(track.querySelectorAll('.pf-item'));
-        items.forEach(function (el, i) { el.addEventListener('click', function () { if (i !== active) { go(i); startAuto(); } }); });
+        items.forEach(function (el, i) { el.addEventListener('click', function () { if (dragMoved) return; if (i !== active) { go(i); startAuto(); } else { openLB(active); } }); });
         dots.innerHTML = data.map(function (_, i) { return '<button class="pf-dot" type="button" role="tab" aria-label="Proyecto ' + (i + 1) + '"></button>'; }).join('');
         Array.prototype.slice.call(dots.querySelectorAll('.pf-dot')).forEach(function (d2, i) { d2.addEventListener('click', function () { go(i); startAuto(); }); });
         layout();
@@ -287,14 +304,36 @@
     }
 
     /* Arrastre / swipe */
-    var dragX = null;
-    stage.addEventListener('pointerdown', function (e) { dragX = e.clientX; stopAuto(); });
+    var dragX = null, dragMoved = false;
+    stage.addEventListener('pointerdown', function (e) { dragX = e.clientX; dragMoved = false; stopAuto(); });
+    stage.addEventListener('pointermove', function (e) { if (dragX !== null && Math.abs(e.clientX - dragX) > 8) dragMoved = true; });
     window.addEventListener('pointerup', function (e) {
       if (dragX === null) return;
       var dx = e.clientX - dragX; dragX = null;
       if (Math.abs(dx) > 40) go(active + (dx < 0 ? 1 : -1));
       startAuto();
     });
+
+    /* Lightbox — ver el diseño en detalle */
+    var lb = document.getElementById('pfLb'), lbImg = document.getElementById('pfLbImg'),
+        lbCap = document.getElementById('pfLbCap'), lbClose = document.getElementById('pfLbClose');
+    function openLB(i) {
+      var p = data[i]; if (!p || !lb) return;
+      lbImg.src = p.image; lbImg.alt = p.alt || p.brand;
+      lbCap.textContent = p.brand + (p.work ? ' — ' + p.work : '');
+      lb.classList.add('open'); lb.setAttribute('aria-hidden', 'false');
+      document.body.style.overflow = 'hidden'; stopAuto();
+    }
+    function closeLB() {
+      if (!lb) return;
+      lb.classList.remove('open'); lb.setAttribute('aria-hidden', 'true');
+      document.body.style.overflow = ''; startAuto();
+    }
+    if (lb) {
+      lb.addEventListener('click', function (e) { if (e.target !== lbImg) closeLB(); });
+      lbClose.addEventListener('click', closeLB);
+      document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && lb.classList.contains('open')) closeLB(); });
+    }
 
     /* Teclado */
     stage.setAttribute('tabindex', '0');
