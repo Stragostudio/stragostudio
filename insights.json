@@ -1,0 +1,58 @@
+{
+  "posts": [
+    {
+      "title": "Cómo elegir una agencia de marketing para iGaming (guía y checklist)",
+      "excerpt": "Qué mirar antes de contratar: conocimiento del sector, cumplimiento Coljuegos, foco en el primer depósito, embudo completo y transparencia. Incluye checklist.",
+      "category": "iGaming",
+      "date": "2026-09-28",
+      "readingTime": "7 min",
+      "url": "/blog-como-elegir-agencia-marketing-igaming",
+      "image": "assets/cover-como-elegir-agencia-marketing-igaming.png"
+    },
+    {
+      "title": "Marketing de afiliados para casas de apuestas: cómo funciona",
+      "excerpt": "Cómo funciona el modelo de afiliados en iGaming: modelos de comisión (CPA, revenue share, híbrido), tipos de afiliados y qué exige el cumplimiento en Colombia.",
+      "category": "iGaming",
+      "date": "2026-09-25",
+      "readingTime": "9 min",
+      "url": "/blog-marketing-afiliados-casas-apuestas",
+      "image": "assets/cover-marketing-afiliados-casas-apuestas.png"
+    },
+    {
+      "title": "CPA vs. CAC: qué métrica debe guiar de verdad tus campañas",
+      "excerpt": "Suenan igual pero no lo son. La diferencia entre CPA y CAC, cómo se calcula cada una y cuál usar para decidir sin quemar presupuesto.",
+      "category": "Métricas",
+      "date": "2026-07-15",
+      "readingTime": "5 min",
+      "url": "/blog-cpa-vs-cac",
+      "image": "assets/cover-cpa-vs-cac.png"
+    },
+    {
+      "title": "AEO: cómo aparecer en ChatGPT y Gemini antes que tu competencia",
+      "excerpt": "La optimización para motores de respuesta con IA es el nuevo primer lugar. Qué es el AEO y qué tácticas verificadas ayudan a que la IA cite tu marca.",
+      "category": "SEO / IA",
+      "date": "2026-07-14",
+      "readingTime": "6 min",
+      "url": "/blog-aeo-chatgpt-gemini",
+      "image": "assets/cover-aeo-chatgpt-gemini.png"
+    },
+    {
+      "title": "Marketing para casas de apuestas en Colombia: qué permite la regulación",
+      "excerpt": "Ley 643, Coljuegos y el Decreto 1451 de 2015: cómo funciona el marco legal del iGaming en Colombia y qué implica para el marketing de un operador.",
+      "category": "iGaming",
+      "date": "2026-07-13",
+      "readingTime": "8 min",
+      "url": "/blog-marketing-igaming-colombia",
+      "image": "assets/cover-marketing-igaming-colombia.png"
+    },
+    {
+      "title": "Del clic al primer depósito: cómo diseñar un embudo que convierte",
+      "excerpt": "Del modelo AIDA al framework AARRR de Dave McClure: qué es un embudo de conversión y cómo aplicarlo del primer clic al primer depósito.",
+      "category": "Estrategia",
+      "date": "2026-07-12",
+      "readingTime": "6 min",
+      "url": "/blog-embudo-primer-deposito",
+      "image": "assets/cover-embudo-primer-deposito.png"
+    }
+  ]
+}
